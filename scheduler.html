@@ -1,0 +1,63 @@
+<style type="text/css">
+	.scheduler-wrapper table{
+		border-left: 1px solid #b2b2b2;
+		width: 100%;
+		display: inline-table;
+		margin-top: 20px;
+	}
+	.scheduler-wrapper table tbody tr td,
+	.scheduler-wrapper table thead tr th{
+	display: inline-block;
+		width: 4.7%;
+		min-height: 30px;
+		text-align: center;
+		padding: 0;
+		border: 1px solid #e8e8e8;
+		height: 100%;
+	}
+
+	.scheduler-wrapper table tbody tr .blockHolder{
+		min-height: 50px;
+		display: block;
+		position: relative;
+	}
+	.scheduler-wrapper table tbody tr .block{
+		padding: 5px;
+		height: 40px;
+		background-color: deepskyblue;
+		display: block;
+		position: absolute;
+		font-size: 12px;
+		width: 100%;
+		overflow: hidden;
+	}
+	.scheduler-wrapper table tbody tr .block:hover{
+		background-color: #39e7ff;
+	}
+</style>
+<div class="scheduler-wrapper">
+	<table class="table">
+		<thead>
+		<tr>
+			<th style="{{cellWidth}}">-------</th>
+			<th style="{{cellWidth}}" ng-repeat="hour in hours">{{hour}}</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr ng-repeat="day in data.days track by $index">
+			<td style="{{cellWidth}}">{{day.name}}</td>
+			<td style="{{cellWidth}}">
+				<div class="blockHolder" ng-repeat="event in day.events track by $index" style="{{buildBlockStyle(event)}}">
+					<div class="block">
+						<span>{{event.title}}</span>
+					</div>
+				</div>
+			</td>
+			<td ng-repeat="h in getCount(hours.length-1) track by $index" style="{{cellWidth}}"></td>
+
+		</tr>
+
+
+		</tbody>
+	</table>
+</div>
