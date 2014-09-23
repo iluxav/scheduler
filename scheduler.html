@@ -138,14 +138,16 @@
 <div class="scheduler-wrapper">
     <div class="scheduler-wrapper-menu">
         <div class="scheduler-wrapper-menu-left">
-            <button ng-click="prevWeek()" class="btn btn-primary"><<<</button>
+            <a class="btn btn-primary" ng-click="prevWeek()" ng-disabled="cursor==0">
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </a>
         </div>
         <div class="scheduler-wrapper-menu-mid">
             <b>{{data.week}}</b>
         </div>
-        <div class="scheduler-wrapper-menu-right">
-            <button ng-click="nextWeek()" class="btn btn-primary">>>></button>
-        </div>
+        <a class="btn btn-primary" ng-disabled="allEvents.length-1==cursor" ng-click="nextWeek()">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+        </a>
     </div>
     <table class="table" border="0" cellpadding="0" cellspacing="0">
         <thead>

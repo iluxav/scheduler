@@ -104,6 +104,7 @@ angular.module('app').directive('schedulerDir', function factory() {
                     scope.cursor = i;
                 }
             });
+            scope.allEvents=dummyData;
             scope.data = dummyData[scope.cursor];
 
             scope.hours = buildHours(scope.start, scope.end);
