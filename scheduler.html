@@ -183,7 +183,18 @@
                     <p>
                         {{selectedEvent.about}}
                     </p>
+                    <div class="panel panel-default">
 
+                        <div class="panel-body">
+                           <p>
+                               <b>Admin View</b>
+                               <select ng-model="selectedEvent.start">
+                                   <option  ng-repeat="h in hoursWithHalfs" value="{{h.key}}">{{h.value}}</option>
+                               </select>
+                               <input type="text" ng-model="selectedEvent.duration">
+                           </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" ng-click="deSelect()" class="btn btn-default" >סגור</button>

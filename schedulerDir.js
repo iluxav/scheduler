@@ -8,7 +8,22 @@ angular.module('app').directive('schedulerDir', function factory() {
     function buildHours(start, end) {
         var hours = [];
         for (var i = start; i <= end; i++) {
-            hours.push(i + ":00");
+            hours.push(i < 10 ? "0" + i + ":00" : i + ":00");
+        }
+        return hours;
+    }
+
+    function buildHoursWithHalf(start, end) {
+        var hours = [];
+        for (var i = start; i <= end; i++) {
+            hours.push({
+                key: i,
+                value: i < 10 ? "0" + i + ":00" : i + ":00"
+            });
+            hours.push({
+                key: i + 0.5,
+                value: i < 10 ? "0" + i + ":30" : i + ":30"
+            });
         }
         return hours;
     }
@@ -44,6 +59,17 @@ angular.module('app').directive('schedulerDir', function factory() {
             scope.currentWeek = getWeek(new Date());
             scope.dayOfWeek = new Date().getDay();
             scope.selectedEvent = null;
+            scope.$watch('selectedEvent.start',computeProperties);
+
+            scope.$watch('selectedEvent.duration',computeProperties);
+            function computeProperties(){
+                if (scope.selectedEvent) {
+                    scope.selectedEvent.startTime = Math.floor(scope.selectedEvent.start) + ":" + ((scope.selectedEvent.start % 1) > 0 ? '30' : '00');
+                    var end=parseInt(scope.selectedEvent.start) + parseInt(scope.selectedEvent.duration);
+                    scope.selectedEvent.endTime = Math.floor(end) + ":" + ((end % 1) > 0 ? '30' : '00');
+                }
+            }
+
 
             angular.forEach(scope.events, function (week, i) {
                 if (week.week == scope.currentWeek) {
@@ -54,6 +80,7 @@ angular.module('app').directive('schedulerDir', function factory() {
             scope.data = scope.events[scope.cursor];
 
             scope.hours = buildHours(scope.minHours, scope.maxHours);
+            scope.hoursWithHalfs = buildHoursWithHalf(scope.minHours, scope.maxHours);
             scope.cells = (scope.maxHours - scope.minHours);
             scope.cellWidth = "width:" + (100 / (scope.cells + 2)) + '%';
             scope.getCount = function (c) {
