@@ -1,26 +1,28 @@
 <style type="text/css">
-    body{
+    body {
         padding: 20px;
         font-family: "arial";
     }
-	.scheduler-wrapper table{
-		width: 100%;
-		display: inline-table;
+
+    .scheduler-wrapper table {
+        width: 100%;
+        display: inline-table;
         border-spacing: 0;
-	}
-	.scheduler-wrapper table tbody tr td,
-	.scheduler-wrapper table thead tr th{
-	display: inline-block;
-		min-height: 30px;
-		text-align: center;
-		padding: 0;
+    }
+
+    .scheduler-wrapper table tbody tr td,
+    .scheduler-wrapper table thead tr th {
+        display: inline-block;
+        min-height: 30px;
+        text-align: center;
+        padding: 0;
         height: 100%;
         background: url("pixel2.png") repeat-y;
         background-position: top right;
-        border-bottom:none;
+        border-bottom: none;
     }
 
-    .scheduler-wrapper table thead tr th{
+    .scheduler-wrapper table thead tr th {
         display: inline-block;
         min-height: 30px;
         text-align: right;
@@ -28,64 +30,168 @@
         height: 100%;
         font-size: 12px;
     }
-    .scheduler-wrapper table thead tr th .hoursLabel{
+
+    .scheduler-wrapper table thead tr th .hoursLabel {
         margin-right: -15px;
     }
 
-	.scheduler-wrapper table tbody tr .blockHolder{
-		min-height: 70px;
-		display: block;
-		position: relative;
+    .scheduler-wrapper table tbody tr .blockHolder {
+        min-height: 70px;
+        display: block;
+        position: relative;
 
-	}
-	.scheduler-wrapper table tbody tr .block{
+    }
+
+    .scheduler-wrapper table tbody tr .block {
         padding: 5px;
         margin: 5px 0 5px 0;
         height: 60px;
-background-color: lightskyblue;
+        background-color: rgb(207, 229, 242);
         display: block;
         position: absolute;
         font-size: 12px;
         width: 100%;
         overflow: hidden;
         cursor: pointer;
-	}
-	.scheduler-wrapper table tbody tr .block:hover{
-		background-color: #39e7ff;
-	}
+        -webkit-transition-property: all; /* Safari */
+        -webkit-transition-duration: 0.4s; /* Safari */
+        -webkit-transition-delay: 0.6s; /* Safari */
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-delay: 0.6s;
+    }
+
+    .scheduler-wrapper table tbody tr .block:hover {
+        background-color: rgb(170, 192, 205);
+        height: 200px;
+        z-index: 999999;
+        box-shadow: 0px 0px 8px rgb(21, 78, 108);
+    }
+
+    .scheduler-wrapper-block-content {
+        width: 80%;
+        margin-left: 20%;
+        text-align: right;
+        font-size: 11px;
+    }
+
+    .scheduler-wrapper-menu {
+        min-width: 30px;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .scheduler-wrapper-menu-left {
+        width: 10%;
+        display: inline;
+        float: right;
+        text-align: left;
+    }
+
+    .scheduler-wrapper-menu-mid {
+        width: 80%;
+        display: inline;
+        float: right;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    .scheduler-wrapper-menu-right {
+        width: 10%;
+        display: inline;
+        float: left;
+        text-align: right;
+    }
+
+    .scheduler-wrapper-label {
+        position: absolute;
+        left: 3px;
+        background-color: #ffffff;
+        color: #45ABD8;
+        font-size: 10px;
+        padding: 2px;
+        width: 19px;
+        height: 17px;
+        border-radius: 39px;
+    }
+
+    .scheduler-wrapper-menu-ok {
+        top: 2px;
+    }
+
+    .scheduler-wrapper-label-space-left {
+        top: 25px;
+
+    }
+    .scheduler-wrapper-label-down{
+        top: -10px;
+        font-size: 9px;
+        left: 49%;
+        position: absolute;
+        color: #ffffff;
+    }
+    .scheduler-wrapper-relative{
+        position: relative;
+    }
 </style>
 <div class="scheduler-wrapper">
-	<table class="table"  border="0" cellpadding="0" cellspacing="0" >
-		<thead>
-		<tr>
-			<th style="{{cellWidth}}"></th>
-			<th style="{{cellWidth}}" ng-repeat="hour in hours">
+    <div class="scheduler-wrapper-menu">
+        <div class="scheduler-wrapper-menu-left">
+            <button ng-click="prevWeek()" class="btn btn-primary"><<<</button>
+        </div>
+        <div class="scheduler-wrapper-menu-mid">
+            <b>{{data.week}}</b>
+        </div>
+        <div class="scheduler-wrapper-menu-right">
+            <button ng-click="nextWeek()" class="btn btn-primary">>>></button>
+        </div>
+    </div>
+    <table class="table" border="0" cellpadding="0" cellspacing="0">
+        <thead>
+        <tr>
+            <th style="{{cellWidth}}"></th>
+            <th style="{{cellWidth}}" ng-repeat="hour in hours">
                 <div class="innerFrame hoursLabel">
                     {{hour}}
                 </div>
-			</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr ng-repeat="day in data.days track by $index">
-			<td style="{{cellWidth}}">{{day.name}}</td>
-			<td style="{{cellWidth}}">
-				<div class="blockHolder" ng-repeat="event in day.events track by $index" style="{{buildBlockStyle(event)}}">
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="day in data.days track by $index">
+            <td style="{{cellWidth}}">{{day.name}}</td>
+            <td style="{{cellWidth}}">
+                <div class="blockHolder" ng-repeat="event in day.events track by $index"
+                     style="{{buildBlockStyle(event)}}">
                     <div class="block">
-						<b>{{event.title}}</b>
-                        <p>
-                           <span>{{event.startTime}} - {{event.endTime}}</span><br>
+                        <div ng-show="event.isSubscribed" class="scheduler-wrapper-menu-ok scheduler-wrapper-label">
+                            <i class="glyphicon glyphicon-ok"></i>
+                        </div>
+                        <span class="scheduler-wrapper-label-space-left scheduler-wrapper-label">
+                            23
+                        </span>
+
+                        <p class="scheduler-wrapper-block-content">
+                            <b>{{event.title}}</b><br>
+                            <span>{{event.startTime}} - {{event.endTime}}</span><br>
                             <i>חדר לייד מדרגות</i>
                         </p>
 
-					</div>
-				</div>
-			</td>
-			<td ng-repeat="h in getCount(hours.length-1) track by $index" style="{{cellWidth}}"></td>
+                        <p class="scheduler-wrapper-relative">
+                            <i class="glyphicon glyphicon-chevron-down scheduler-wrapper-label-down"></i>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate dolor
+                            dolorem dolorum fuga fugiat nihil, omnis perferendis, placeat, possimus quis quisquam saepe
+                            sequi suscipit velit! Delectus, placeat quisquam! Aspernatur.
+                        </p>
+                    </div>
+                </div>
+            </td>
+            <td ng-repeat="h in getCount(hours.length-1) track by $index" style="{{cellWidth}}"></td>
 
-		</tr>
+        </tr>
 
 
-		</tbody>
-	</table>
+        </tbody>
+    </table>
 </div>
