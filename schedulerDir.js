@@ -42,7 +42,8 @@ angular.module('app').directive('schedulerDir', function factory() {
             scope.maxHours = scope.maxHours || 24;
             scope.cursor = 0;
             scope.currentWeek = getWeek(new Date());
-            scope.dayOfWeek=new Date().getDay();
+            scope.dayOfWeek = new Date().getDay();
+            scope.selectedEvent = null;
 
             angular.forEach(scope.events, function (week, i) {
                 if (week.week == scope.currentWeek) {
@@ -62,7 +63,12 @@ angular.module('app').directive('schedulerDir', function factory() {
                 var start = event.start - scope.minHours;
                 return 'width:' + ((event.duration * 100) ) + '%; right: ' + ((start * 100)) + '%;';
             };
-
+            scope.onSelect = function (event) {
+                scope.selectedEvent = event;
+            };
+            scope.deSelect = function () {
+                scope.selectedEvent = null;
+            };
             scope.nextWeek = function () {
                 scope.cursor++;
                 scope.data = scope.events[scope.cursor];

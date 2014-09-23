@@ -139,9 +139,62 @@
     .scheduler-wrapper-relative{
         position: relative;
     }
+    .scheduler-wrapper-overlay{
+        position: fixed;
+        top:0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 9999999;
+    }
+    .scheduler-wrapper-popup{
+        z-index: 99999991;
+        display: block;
+        top:20%
+    }
+    .scheduler-wrapper-popup .close{
+        float: left;
+    }
+
+    .scheduler-wrapper-popup .modal-body img{
+        float: left;
+        width: 191px;
+        margin: 0 50px 10px 0;
+    }
 
 </style>
 <div class="scheduler-wrapper">
+    <div ng-show="selectedEvent" class="scheduler-wrapper-overlay"></div>
+    <div ng-show="selectedEvent" class="modal scheduler-wrapper-popup">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" ng-click="deSelect()" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">{{selectedEvent.title}}</h4>
+                </div>
+                <div class="modal-body">
+                    <h3>{{selectedEvent.title}}</h3>
+                    <img ng-if="selectedEvent.img" src="{{selectedEvent.img}}" alt=""/>
+                    <p>
+                        {{selectedEvent.location}} <br>
+                    </p>
+                    <p>
+                        {{selectedEvent.about}}
+                    </p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" ng-click="deSelect()" class="btn btn-default" >סגור</button>
+                    <button type="button" ng-show="!selectedEvent.isSubscribed" class="btn btn-primary">הרשם לאירועה</button>
+                    <button type="button" ng-show="selectedEvent.isSubscribed" class="btn btn-warning">בטל אירועה</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
     <div class="scheduler-wrapper-menu">
         <div class="scheduler-wrapper-menu-left">
             <a class="btn btn-primary" ng-click="prevWeek()" ng-disabled="cursor==0">
@@ -174,7 +227,7 @@
             <td style="{{cellWidth}}">
                 <div class="blockHolder" ng-repeat="event in day.events track by $index"
                      style="{{buildBlockStyle(event)}}">
-                    <div class="block">
+                    <div class="block" ng-click="onSelect(event)">
                         <div ng-show="event.isSubscribed" class="scheduler-wrapper-menu-ok scheduler-wrapper-label">
                             <i class="glyphicon glyphicon-ok"></i>
                         </div>
