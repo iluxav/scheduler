@@ -63,11 +63,11 @@ angular.module('app').directive('schedulerDir', function factory() {
 
             scope.nextWeek = function () {
                 scope.cursor++;
-                scope.data = dummyData[scope.cursor];
+                scope.data = scope.events[scope.cursor];
             }
             scope.prevWeek = function () {
                 scope.cursor--;
-                scope.data = dummyData[scope.cursor];
+                scope.data = scope.events[scope.cursor];
             }
         }
     };
