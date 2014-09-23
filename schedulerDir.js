@@ -23,8 +23,8 @@ angular.module('app').directive('schedulerDir', function factory() {
         var newEndDate = start.getDate() + 6;
         var newEndDate = new Date().setDate(newEndDate);
         var end = new Date(newEndDate);
-        var res = start.getDate().toString() + '/' + (start.getMonth() + 1).toString()  + '/' + start.getFullYear().toString() + "-" +
-            end.getDate().toString()  + '/' + (end.getMonth() + 1).toString()  + '/' + end.getFullYear().toString();
+        var res = start.getDate().toString() + '/' + (start.getMonth() + 1).toString() + '/' + start.getFullYear().toString() + "-" +
+            end.getDate().toString() + '/' + (end.getMonth() + 1).toString() + '/' + end.getFullYear().toString();
         console.log(res);
         return res;
     }
@@ -32,23 +32,25 @@ angular.module('app').directive('schedulerDir', function factory() {
     return {
         restrict: 'A',
         templateUrl: 'scheduler.html',
-        scope:{
-            minHours:'=',
-            maxHours:'=',
-            events:'='
+        scope: {
+            minHours: '=',
+            maxHours: '=',
+            events: '='
         },
         link: function (scope, element, attrs, controllers) {
             scope.minHours = scope.minHours || 6;
             scope.maxHours = scope.maxHours || 24;
             scope.cursor = 0;
+            scope.currentWeek = getWeek(new Date());
+            scope.dayOfWeek=new Date().getDay();
 
             angular.forEach(scope.events, function (week, i) {
-                if (week.week == getWeek(new Date())) {
+                if (week.week == scope.currentWeek) {
                     scope.cursor = i;
                 }
             });
 
-            scope.data =  scope.events[scope.cursor];
+            scope.data = scope.events[scope.cursor];
 
             scope.hours = buildHours(scope.minHours, scope.maxHours);
             scope.cells = (scope.maxHours - scope.minHours);
