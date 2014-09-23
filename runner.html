@@ -1,24 +1,88 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head lang="en">
-	<meta charset="UTF-8">
-	<title></title>
-	<style type="text/css">
-		body{
-			direction: rtl;
-		}
-	</style>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
-	<script src="bower_components/angular/angular.min.js" type="text/javascript"></script>
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-	<script type="text/javascript">
-		angular.module('app',[]);
-	</script>
-	<script src="schedulerDir.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            direction: rtl;
+        }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+    <script src="bower_components/angular/angular.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <script type="text/javascript">
+        angular.module('app', []).controller('runnerCtrl', function ($scope) {
+            $scope.dummyData = [
+                {
+                    week: '14/9/2014-20/9/2014',
+                    days: [
+                        {
+                            name: 'יום שלישי',
+                            events: [
+                                { id: '1', isSubscribed: true, title: 'This is number 1', duration: 2, start: 6.5, startTime: '06:30', endTime: '08:30' },
+                            ]
+                        }
+                    ]
+                },
+                {
+                    week: '21/9/2014-27/9/2014',
+                    days: [
+                        {
+                            name: 'יום ראשון',
+                            events: [
+                                { id: '1', isSubscribed: false, title: 'This is number 1', duration: 13.5, start: 9, startTime: '09:00', endTime: '22:30' },
+                                { id: '2', isSubscribed: false, title: 'This is number 2', duration: 1.5, start: 19.5, startTime: '19:30', endTime: '21:00' }
+                            ]
+                        },
+                        {
+                            name: 'יום שני',
+                            events: [
+                                { id: '3', isSubscribed: false, title: 'This is number 3', duration: 2, start: 9, startTime: '09:00', endTime: '10:00'  },
+                                { id: '4', isSubscribed: false, title: 'This is number 4', duration: 1.5, start: 8, startTime: '08:00', endTime: '09:30'}
+                            ]
+                        },
+                        {
+                            name: 'יום שלישי',
+                            events: [
+                                { id: '1', isSubscribed: false, title: 'This is number 1', duration: 2, start: 6.5, startTime: '06:30', endTime: '08:30' },
+                                { id: '2', isSubscribed: true, title: 'This is number 2', duration: 1.5, start: 7, startTime: '07:00', endTime: '08:30' },
+                                { id: '2', isSubscribed: false, title: 'This is number 2', duration: 1.5, start: 19.5, startTime: '19:30', endTime: '21:00' }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    week: '28/9/2014-4/10/2014',
+                    days: [
+                        {
+                            name: 'יום ראשון',
+                            events: [
+                                { id: '1', title: 'This is number 1', duration: 2, start: 6.5, startTime: '06:30', endTime: '08:30' }
+                            ]
+                        },
+                        {
+                            name: 'יום שני',
+                            events: [
+                                { id: '3', title: 'This is number 3', duration: 2, start: 9, startTime: '09:00', endTime: '10:00'  }
+                            ]
+                        },
+                        {
+                            name: 'יום שלישי',
+                            events: [
+                                { id: '1', title: 'This is number 1', duration: 2, start: 6.5, startTime: '06:30', endTime: '08:30' },
+                            ]
+                        }
+                    ]
+                }
+            ];
+        });
+    </script>
+    <script src="schedulerDir.js" type="text/javascript"></script>
 </head>
 <body>
-<div>
-	<div scheduler-dir></div>
+<div ng-controller="runnerCtrl">
+    <div scheduler-dir min-hours="6" max-hours="24" events="dummyData"></div>
 </div>
 </body>
 </html>
