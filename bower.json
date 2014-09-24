@@ -11,5 +11,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "homepage": "https://github.com/iluxav/scheduler",
+  "dependencies": {
+    "angular": "~1.2.25",
+    "bootstrap": "~3.2.0",
+    "angular-ui": "~0.4.0"
+  }
 }
