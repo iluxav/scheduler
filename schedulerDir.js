@@ -13,6 +13,15 @@ angular.module('app').directive('schedulerDir', function factory() {
         return hours;
     }
 
+    function buildHoursWithHalfs(start, end) {
+        var hours = [];
+        for (var i = start; i <= end; i++) {
+            hours.push((i < 10 ? "0" + i : i) + ":00");
+            hours.push((i < 10 ? "0" + i : i) + ":30");
+        }
+        return hours;
+    }
+
     function floatToTime(val) {
         val = parseFloat(val);
         var mm = Math.floor((val % 1) * 60);
@@ -66,6 +75,7 @@ angular.module('app').directive('schedulerDir', function factory() {
             scope.currentWeek = getWeek(new Date());
             scope.dayOfWeek = new Date().getDay();
             scope.selectedEvent = null;
+            scope.dayNames=window.staticResources.localization.dayNames;
             scope.$watch('selectedEvent.duration.h', function (n, o) {
                 if (!scope.selectedEvent)
                     return;
@@ -103,6 +113,7 @@ angular.module('app').directive('schedulerDir', function factory() {
             scope.data = scope.events[scope.cursor];
 
             scope.hours = buildHours(scope.minHours, scope.maxHours);
+            scope.hoursWithHalfs = buildHoursWithHalfs(scope.minHours, scope.maxHours);
             scope.cells = (scope.maxHours - scope.minHours);
             scope.cellWidth = "width:" + (100 / (scope.cells + 2)) + '%';
             scope.getCount = function (c) {

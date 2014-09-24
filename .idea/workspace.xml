@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="779b0742-2e08-44d4-8654-fd31a2ca2f4b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runner.html" afterPath="$PROJECT_DIR$/runner.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scheduler.html" afterPath="$PROJECT_DIR$/scheduler.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedulerDir.js" afterPath="$PROJECT_DIR$/schedulerDir.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="schedulerComp.iws" />
@@ -29,8 +31,8 @@
       <file leaf-file-name="runner.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runner.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.846153" vertical-offset="2530" max-vertical-offset="3278">
-              <caret line="142" column="7" selection-start-line="142" selection-start-column="7" selection-end-line="142" selection-end-column="7" />
+            <state vertical-scroll-proportion="-13.538462" vertical-offset="0" max-vertical-offset="3520">
+              <caret line="16" column="52" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -39,8 +41,8 @@
       <file leaf-file-name="schedulerDir.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/schedulerDir.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.571428" vertical-offset="880" max-vertical-offset="2992">
-              <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+            <state vertical-scroll-proportion="-15.714286" vertical-offset="1254" max-vertical-offset="3234">
+              <caret line="77" column="72" selection-start-line="77" selection-start-column="72" selection-end-line="77" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -49,8 +51,8 @@
       <file leaf-file-name="scheduler.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scheduler.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42777777" vertical-offset="704" max-vertical-offset="6072">
-              <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.2361111" vertical-offset="4956" max-vertical-offset="6072">
+              <caret line="233" column="17" selection-start-line="233" selection-start-column="17" selection-end-line="233" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
@@ -227,7 +229,11 @@
       <created>1411552805840</created>
       <updated>1411552805840</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding animation sugar to event blocks">
+      <created>1411555305857</created>
+      <updated>1411555305857</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -271,7 +277,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="refactoring code" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring code" />
+    <MESSAGE value="adding animation sugar to event blocks" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding animation sugar to event blocks" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -385,26 +392,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runner.html">
+    <entry file="file://$PROJECT_DIR$/schedulerDir.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.846153" vertical-offset="2530" max-vertical-offset="3278">
-          <caret line="142" column="7" selection-start-line="142" selection-start-column="7" selection-end-line="142" selection-end-column="7" />
+        <state vertical-scroll-proportion="-15.714286" vertical-offset="1254" max-vertical-offset="3234">
+          <caret line="77" column="72" selection-start-line="77" selection-start-column="72" selection-end-line="77" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/schedulerDir.js">
+    <entry file="file://$PROJECT_DIR$/runner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.571428" vertical-offset="880" max-vertical-offset="2992">
-          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+        <state vertical-scroll-proportion="-13.538462" vertical-offset="0" max-vertical-offset="3520">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scheduler.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42777777" vertical-offset="704" max-vertical-offset="6072">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.2361111" vertical-offset="4956" max-vertical-offset="6072">
+          <caret line="233" column="17" selection-start-line="233" selection-start-column="17" selection-end-line="233" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#th#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#1;n#tr#0;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
