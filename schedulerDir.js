@@ -8,7 +8,7 @@ angular.module('app').directive('schedulerDir', function factory() {
     function buildHours(start, end) {
         var hours = [];
         for (var i = start; i <= end; i++) {
-            hours.push(i < 10 ? "0" + i + ":00" : i + ":00");
+            hours.push((i < 10 ? "0" + i : i) + ":00");
         }
         return hours;
     }
@@ -18,14 +18,28 @@ angular.module('app').directive('schedulerDir', function factory() {
         for (var i = start; i <= end; i++) {
             hours.push({
                 key: i,
-                value: i < 10 ? "0" + i + ":00" : i + ":00"
+                value: (i < 10 ? "0" + i : i) + ":00"
             });
             hours.push({
                 key: i + 0.5,
-                value: i < 10 ? "0" + i + ":30" : i + ":30"
+                value: (i < 10 ? "0" + i : i) + ":30"
             });
         }
         return hours;
+    }
+
+    function floatToTime(val) {
+        val = parseFloat(val);
+        var mm = Math.floor((val % 1) * 60);
+        var hh = Math.floor(val);
+        mm = mm < 10 ? '0' + mm : mm;
+        hh = hh < 10 ? '0' + hh : hh;
+        return hh.toString() + ':' + mm.toString();
+    }
+
+    function durationToFloat(duration) {
+        var durationFloat = parseInt(duration.h) + parseFloat(duration.m / 60);
+        return durationFloat;
     }
 
     function getWeek(d) {
@@ -44,6 +58,7 @@ angular.module('app').directive('schedulerDir', function factory() {
         return res;
     }
 
+
     return {
         restrict: 'A',
         templateUrl: 'scheduler.html',
@@ -59,17 +74,37 @@ angular.module('app').directive('schedulerDir', function factory() {
             scope.currentWeek = getWeek(new Date());
             scope.dayOfWeek = new Date().getDay();
             scope.selectedEvent = null;
-            scope.$watch('selectedEvent.start',computeProperties);
+            scope.$watch('selectedEvent.duration.h', function (n, o) {
+                if (validateHours(n)) {
+                    computeProperties();
+                } else {
+                    scope.selectedEvent.duration.h = o;
+                }
+            });
+            scope.$watch('selectedEvent.duration.m', function (n, o) {
+                if (validateMinutes(n)) {
+                    computeProperties();
+                } else {
+                    scope.selectedEvent.duration.m = o;
+                }
+            });
 
-            scope.$watch('selectedEvent.duration',computeProperties);
-            function computeProperties(){
+
+            function computeProperties() {
                 if (scope.selectedEvent) {
-                    scope.selectedEvent.startTime = Math.floor(scope.selectedEvent.start) + ":" + ((scope.selectedEvent.start % 1) > 0 ? '30' : '00');
-                    var end=parseInt(scope.selectedEvent.start) + parseInt(scope.selectedEvent.duration);
-                    scope.selectedEvent.endTime = Math.floor(end) + ":" + ((end % 1) > 0 ? '30' : '00');
+                    scope.selectedEvent.startTime = floatToTime(scope.selectedEvent.start);
+                    var end = parseInt(scope.selectedEvent.start) + durationToFloat(scope.selectedEvent.duration);
+                    scope.selectedEvent.endTime = floatToTime(end);
                 }
             }
 
+            function validateHours(h) {
+                return h < 25 && h > 0;
+            }
+
+            function validateMinutes(m) {
+                return m < 61 && m > -1;
+            }
 
             angular.forEach(scope.events, function (week, i) {
                 if (week.week == scope.currentWeek) {
@@ -88,7 +123,7 @@ angular.module('app').directive('schedulerDir', function factory() {
             };
             scope.buildBlockStyle = function (event) {
                 var start = event.start - scope.minHours;
-                return 'width:' + ((event.duration * 100) ) + '%; right: ' + ((start * 100)) + '%;';
+                return 'width:' + (durationToFloat(event.duration) * 100) + '%; right: ' + ((start * 100)) + '%;';
             };
             scope.onSelect = function (event) {
                 scope.selectedEvent = event;

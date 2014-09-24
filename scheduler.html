@@ -191,7 +191,11 @@
                                <select ng-model="selectedEvent.start">
                                    <option  ng-repeat="h in hoursWithHalfs" value="{{h.key}}">{{h.value}}</option>
                                </select>
-                               <input type="text" ng-model="selectedEvent.duration">
+                               <!--<input style="width: 40px;" type="text" ng-model="selectedEvent.duration">-->
+
+
+                               <input style="width: 40px;"  step="15" type="number" ng-model="selectedEvent.duration.m">
+                               <input style="width: 40px;"  type="number" ng-model="selectedEvent.duration.h">
                            </p>
                         </div>
                     </div>
