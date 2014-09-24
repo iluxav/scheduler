@@ -1,5 +1,5 @@
 /**
- * Created by ilyavinokurov on 9/22/14.
+ * Created by Ilya Vinokurov on 9/22/14.
  */
 
 
@@ -13,21 +13,6 @@ angular.module('app').directive('schedulerDir', function factory() {
         return hours;
     }
 
-    function buildHoursWithHalf(start, end) {
-        var hours = [];
-        for (var i = start; i <= end; i++) {
-            hours.push({
-                key: i,
-                value: (i < 10 ? "0" + i : i) + ":00"
-            });
-            hours.push({
-                key: i + 0.5,
-                value: (i < 10 ? "0" + i : i) + ":30"
-            });
-        }
-        return hours;
-    }
-
     function floatToTime(val) {
         val = parseFloat(val);
         var mm = Math.floor((val % 1) * 60);
@@ -35,6 +20,13 @@ angular.module('app').directive('schedulerDir', function factory() {
         mm = mm < 10 ? '0' + mm : mm;
         hh = hh < 10 ? '0' + hh : hh;
         return hh.toString() + ':' + mm.toString();
+    }
+
+    function timeStringToFloat(time) {
+        var spl = time.split(':');
+        var h = parseInt(spl[0]);
+        var m = parseInt(spl[1]) / 60;
+        return (h + m);
     }
 
     function durationToFloat(duration) {
@@ -75,6 +67,8 @@ angular.module('app').directive('schedulerDir', function factory() {
             scope.dayOfWeek = new Date().getDay();
             scope.selectedEvent = null;
             scope.$watch('selectedEvent.duration.h', function (n, o) {
+                if (!scope.selectedEvent)
+                    return;
                 if (validateHours(n)) {
                     computeProperties();
                 } else {
@@ -82,6 +76,8 @@ angular.module('app').directive('schedulerDir', function factory() {
                 }
             });
             scope.$watch('selectedEvent.duration.m', function (n, o) {
+                if (!scope.selectedEvent)
+                    return;
                 if (validateMinutes(n)) {
                     computeProperties();
                 } else {
@@ -91,20 +87,12 @@ angular.module('app').directive('schedulerDir', function factory() {
 
 
             function computeProperties() {
-                if (scope.selectedEvent) {
-                    scope.selectedEvent.startTime = floatToTime(scope.selectedEvent.start);
-                    var end = parseInt(scope.selectedEvent.start) + durationToFloat(scope.selectedEvent.duration);
-                    scope.selectedEvent.endTime = floatToTime(end);
-                }
+                var end = timeStringToFloat(scope.selectedEvent.startTime) + durationToFloat(scope.selectedEvent.duration);
+                scope.selectedEvent.endTime = floatToTime(end);
             }
 
-            function validateHours(h) {
-                return h < 25 && h > 0;
-            }
-
-            function validateMinutes(m) {
-                return m < 61 && m > -1;
-            }
+            function validateHours(h) {  return h < 25 && h > 0; }
+            function validateMinutes(m) {  return m < 61 && m > -1; }
 
             angular.forEach(scope.events, function (week, i) {
                 if (week.week == scope.currentWeek) {
@@ -115,14 +103,13 @@ angular.module('app').directive('schedulerDir', function factory() {
             scope.data = scope.events[scope.cursor];
 
             scope.hours = buildHours(scope.minHours, scope.maxHours);
-            scope.hoursWithHalfs = buildHoursWithHalf(scope.minHours, scope.maxHours);
             scope.cells = (scope.maxHours - scope.minHours);
             scope.cellWidth = "width:" + (100 / (scope.cells + 2)) + '%';
             scope.getCount = function (c) {
                 return new Array(c);
             };
             scope.buildBlockStyle = function (event) {
-                var start = event.start - scope.minHours;
+                var start = timeStringToFloat(event.startTime) - scope.minHours;
                 return 'width:' + (durationToFloat(event.duration) * 100) + '%; right: ' + ((start * 100)) + '%;';
             };
             scope.onSelect = function (event) {

@@ -176,7 +176,7 @@
                 </div>
                 <div class="modal-body">
                     <h3>{{selectedEvent.title}}</h3>
-                    <img ng-if="selectedEvent.img" src="{{selectedEvent.img}}" alt=""/>
+                    <img  ng-src="{{selectedEvent.img}}" alt=""/>
                     <p>
                         {{selectedEvent.location}} <br>
                     </p>
@@ -188,12 +188,9 @@
                         <div class="panel-body">
                            <p>
                                <b>Admin View</b>
-                               <select ng-model="selectedEvent.start">
-                                   <option  ng-repeat="h in hoursWithHalfs" value="{{h.key}}">{{h.value}}</option>
+                               <select ng-model="selectedEvent.startTime">
+                                   <option  ng-repeat="h in hours" value="{{h}}">{{h}}</option>
                                </select>
-                               <!--<input style="width: 40px;" type="text" ng-model="selectedEvent.duration">-->
-
-
                                <input style="width: 40px;"  step="15" type="number" ng-model="selectedEvent.duration.m">
                                <input style="width: 40px;"  type="number" ng-model="selectedEvent.duration.h">
                            </p>
@@ -253,14 +250,12 @@
                         <p class="scheduler-wrapper-block-content">
                             <b>{{event.title}}</b><br>
                             <span>{{event.startTime}} - {{event.endTime}}</span><br>
-                            <i>חדר לייד מדרגות</i>
+                            <i>{{event.location}}</i>
                         </p>
 
                         <p class="scheduler-wrapper-relative">
                             <i class="glyphicon glyphicon-chevron-down scheduler-wrapper-label-down"></i>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cupiditate dolor
-                            dolorem dolorum fuga fugiat nihil, omnis perferendis, placeat, possimus quis quisquam saepe
-                            sequi suscipit velit! Delectus, placeat quisquam! Aspernatur.
+                           {{event.about}}
                         </p>
                     </div>
                 </div>
