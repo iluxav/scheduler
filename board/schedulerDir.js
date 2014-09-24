@@ -7,13 +7,13 @@ angular.module('comp-scheduler').directive('schedulerDir', function (utilsServic
         restrict: 'A',
         templateUrl: 'board/scheduler.html',
         scope: {
-            minHours: '=',
-            maxHours: '=',
+            minHours: '@',
+            maxHours: '@',
             events: '='
         },
         link: function (scope, element, attrs, controllers) {
-            scope.minHours = scope.minHours || 6;
-            scope.maxHours = scope.maxHours || 24;
+            scope.minHours = parseInt(scope.minHours) || 6;
+            scope.maxHours = parseInt(scope.maxHours) || 24;
             scope.cursor = null;
             scope.currentWeek = utilsService.getWeek(new Date());
             scope.dayOfWeek = new Date().getDay();

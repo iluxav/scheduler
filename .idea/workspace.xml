@@ -2,18 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="779b0742-2e08-44d4-8654-fd31a2ca2f4b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mock/data.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/dataService.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eventInfo/eventInfoDir.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/eventInfo/eventInfoView.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/resourceConst.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/scheduler.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/services/utilsService.js" />
-      <change type="MOVED" beforePath="C:\GITHUB\scheduler\scheduler.html" afterPath="$PROJECT_DIR$/board/scheduler.html" />
-      <change type="MOVED" beforePath="C:\GITHUB\scheduler\schedulerDir.js" afterPath="$PROJECT_DIR$/board/schedulerDir.js" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\MIT-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\dist\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\dist\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\dist\jquery.min.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\jsonp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\load.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\parseJSON.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\parseXML.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\script.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\var\nonce.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\var\rquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\xhr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\attributes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\attributes\attr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\attributes\classes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\attributes\prop.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\attributes\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\attributes\val.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\callbacks.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\core.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\core\access.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\core\init.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\core\parseHTML.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\core\ready.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\core\var\rsingleTag.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\addGetHookIf.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\curCSS.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\defaultDisplay.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\hiddenVisibleSelectors.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\swap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\var\cssExpand.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\var\getStyles.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\var\isHidden.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\var\rmargin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\var\rnumnonpx.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\data.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\data\Data.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\data\accepts.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\data\var\data_priv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\data\var\data_user.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\deferred.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\deprecated.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\dimensions.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\effects.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\effects\Tween.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\effects\animatedSelector.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\event.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\event\alias.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\event\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\exports\amd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\exports\global.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\intro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\manipulation.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\manipulation\_evalUrl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\manipulation\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\manipulation\var\rcheckableType.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\offset.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\outro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\queue.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\queue\delay.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\selector-native.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\selector-sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\selector.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\serialize.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\sizzle\dist\sizzle.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\sizzle\dist\sizzle.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\sizzle\dist\sizzle.min.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\traversing.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\traversing\findFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\traversing\var\rneedsContext.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\arr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\class2type.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\concat.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\hasOwn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\indexOf.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\pnum.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\push.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\rnotwhite.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\slice.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\strundefined.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\support.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\toString.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\wrap.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mock/data.json" afterPath="$PROJECT_DIR$/mock/data.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runner.html" afterPath="$PROJECT_DIR$/runner.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/board/scheduler.html" afterPath="$PROJECT_DIR$/board/scheduler.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/board/schedulerDir.js" afterPath="$PROJECT_DIR$/board/schedulerDir.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="schedulerComp.iws" />
@@ -37,11 +118,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="runner.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="runner.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runner.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.77398163" vertical-offset="27" max-vertical-offset="836">
-              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+            <state vertical-scroll-proportion="-4.730769" vertical-offset="75" max-vertical-offset="946">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schedulerDir.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/board/schedulerDir.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.035715" vertical-offset="495" max-vertical-offset="1320">
+              <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scheduler.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/board/scheduler.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7805519" vertical-offset="0" max-vertical-offset="1672">
+              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mock/data.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.6153846" vertical-offset="0" max-vertical-offset="4774">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -99,17 +210,17 @@
         <option value="$PROJECT_DIR$/schedulerDir.js" />
         <option value="$PROJECT_DIR$/eventInfo/eventInfoView.html" />
         <option value="$PROJECT_DIR$/services/utilitiesService.js" />
-        <option value="$PROJECT_DIR$/board/scheduler.html" />
         <option value="$PROJECT_DIR$/css/scheduler.css" />
-        <option value="$PROJECT_DIR$/mock/data.json" />
         <option value="$PROJECT_DIR$/services/dataService.js" />
         <option value="$PROJECT_DIR$/services/utilsService.js" />
         <option value="$PROJECT_DIR$/eventInfo/eventInfoDir.js" />
-        <option value="$PROJECT_DIR$/board/schedulerDir.js" />
         <option value="$PROJECT_DIR$/config/resourceConst.js" />
         <option value="$PROJECT_DIR$/Gruntfile.json" />
-        <option value="$PROJECT_DIR$/runner.html" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/board/schedulerDir.js" />
+        <option value="$PROJECT_DIR$/mock/data.json" />
+        <option value="$PROJECT_DIR$/board/scheduler.html" />
+        <option value="$PROJECT_DIR$/runner.html" />
       </list>
     </option>
   </component>
@@ -161,6 +272,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedulerComp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="board" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -259,7 +384,11 @@
       <created>1411566286720</created>
       <updated>1411566286720</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Extracting to smaller modules, setting grunt and dist folder, creating data service and utilities service">
+      <created>1411571414061</created>
+      <updated>1411571414061</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -306,7 +435,8 @@
     <MESSAGE value="adding animation sugar to event blocks" />
     <MESSAGE value="adding window.staticResources.localization.dayNames for localization" />
     <MESSAGE value="fixing" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing" />
+    <MESSAGE value="Extracting to smaller modules, setting grunt and dist folder, creating data service and utilities service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extracting to smaller modules, setting grunt and dist folder, creating data service and utilities service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -448,22 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/board/scheduler.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1540">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mock/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.47058824" vertical-offset="462" max-vertical-offset="4466">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eventInfo/eventInfoView.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.230769" vertical-offset="0" max-vertical-offset="968">
@@ -514,14 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/board/schedulerDir.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="787">
@@ -537,14 +643,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0384614" vertical-offset="185" max-vertical-offset="946">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -564,10 +662,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.0384614" vertical-offset="185" max-vertical-offset="946">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/runner.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77398163" vertical-offset="27" max-vertical-offset="836">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        <state vertical-scroll-proportion="-4.730769" vertical-offset="75" max-vertical-offset="946">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board/schedulerDir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.035715" vertical-offset="495" max-vertical-offset="1320">
+          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.6153846" vertical-offset="0" max-vertical-offset="4774">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board/scheduler.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7805519" vertical-offset="0" max-vertical-offset="1672">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding />
         </state>
       </provider>
