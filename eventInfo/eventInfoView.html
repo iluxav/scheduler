@@ -1,0 +1,39 @@
+
+<div ng-show="selectedEvent" class="modal scheduler-wrapper-popup">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" ng-click="close()" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">{{selectedEvent.title}}</h4>
+            </div>
+            <div class="modal-body">
+                <h3>{{selectedEvent.title}}</h3>
+                <img  ng-src="{{selectedEvent.img}}" alt=""/>
+                <p>
+                    {{selectedEvent.location}} <br>
+                </p>
+                <p>
+                    {{selectedEvent.about}}
+                </p>
+                <div class="panel panel-default">
+
+                    <div class="panel-body">
+                        <p>
+                            <b>Admin View</b>
+                            <select ng-model="selectedEvent.startTime">
+                                <option  ng-repeat="h in hoursWithHalfs" value="{{h}}">{{h}}</option>
+                            </select>
+                            <input style="width: 40px;"  step="15" type="number" ng-model="selectedEvent.duration.m">
+                            <input style="width: 40px;"  type="number" ng-model="selectedEvent.duration.h">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" ng-click="close()" class="btn btn-default" >סגור</button>
+                <button type="button" ng-show="!selectedEvent.isSubscribed" class="btn btn-primary">הרשם לאירועה</button>
+                <button type="button" ng-show="selectedEvent.isSubscribed" class="btn btn-warning">בטל אירועה</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

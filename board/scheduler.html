@@ -1,0 +1,65 @@
+
+<div class="scheduler-wrapper">
+    <div ng-show="selectedEvent" class="scheduler-wrapper-overlay"></div>
+    <div event-info selected-event="selectedEvent" min-hours="{{minHours}}" max-hours="{{maxHours}}"></div>
+    <div class="scheduler-wrapper-menu">
+        <div class="scheduler-wrapper-menu-left">
+            <a class="btn btn-primary" ng-click="prevWeek()" ng-disabled="cursor==0">
+                <i class="glyphicon glyphicon-chevron-right"></i>
+            </a>
+        </div>
+        <div class="scheduler-wrapper-menu-mid">
+            <b>{{data.week}}</b>
+        </div>
+       <div class="scheduler-wrapper-menu-right">
+           <a class="btn btn-primary" ng-disabled="events.length-1==cursor" ng-click="nextWeek()">
+               <i class="glyphicon glyphicon-chevron-left"></i>
+           </a>
+       </div>
+    </div>
+    <table class="table" border="0" cellpadding="0" cellspacing="0">
+        <thead>
+        <tr>
+            <th style="{{cellWidth}}"></th>
+            <th style="{{cellWidth}}" ng-repeat="hour in hours">
+                <div class="innerFrame hoursLabel">
+                    {{hour}}
+                </div>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="day in data.days track by $index" ng-class="{'today': dayOfWeek ==day.day && currentWeek==data.week}">
+            <td style="{{cellWidth}}">{{dayNames[day.day-1]}}</td>
+            <td style="{{cellWidth}}">
+                <div class="blockHolder" ng-repeat="event in day.events track by $index"
+                     style="{{buildBlockStyle(event)}}">
+                    <div class="block" ng-click="onSelect(event)">
+                        <div ng-show="event.isSubscribed" class="scheduler-wrapper-menu-ok scheduler-wrapper-label">
+                            <i class="glyphicon glyphicon-ok"></i>
+                        </div>
+                        <span class="scheduler-wrapper-label-space-left scheduler-wrapper-label">
+                            23
+                        </span>
+
+                        <p class="scheduler-wrapper-block-content">
+                            <b>{{event.title}}</b><br>
+                            <span>{{event.startTime}} - {{event.endTime}}</span><br>
+                            <i>{{event.location}}</i>
+                        </p>
+
+                        <p class="scheduler-wrapper-relative">
+                            <i class="glyphicon glyphicon-chevron-down scheduler-wrapper-label-down"></i>
+                           {{event.about}}
+                        </p>
+                    </div>
+                </div>
+            </td>
+            <td ng-repeat="h in getCount(hours.length-1) track by $index" style="{{cellWidth}}"></td>
+
+        </tr>
+
+
+        </tbody>
+    </table>
+</div>
