@@ -57,6 +57,15 @@ angular.module('comp-scheduler').factory('utilsService', function () {
         console.log(res);
         return res;
     }
+    function getWeeks(date,numberOfOccurences){
+        var weeks =[];
+        for(var i=0;i<=numberOfOccurences;i++){
+            var newDate=new Date();
+            newDate.setDate(date.getDate() + (7*i));
+            weeks.push(getWeek(newDate));
+        }
+        return weeks;
+    }
 
     function findCurrentWeek(events, currentWeek) {
         for (var i = 0; i <= events.length; i++) {
@@ -75,6 +84,7 @@ angular.module('comp-scheduler').factory('utilsService', function () {
         floatToTime: floatToTime,
         buildHours: buildHours,
         getWeek: getWeek,
+        getWeeks:getWeeks,
         findCurrentWeek:findCurrentWeek
     };
 });

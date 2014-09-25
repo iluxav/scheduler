@@ -2,99 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="779b0742-2e08-44d4-8654-fd31a2ca2f4b" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\MIT-LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\dist\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\dist\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\dist\jquery.min.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\jsonp.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\load.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\parseJSON.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\parseXML.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\script.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\var\nonce.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\var\rquery.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\ajax\xhr.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\attributes.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\attributes\attr.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\attributes\classes.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\attributes\prop.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\attributes\support.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\attributes\val.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\callbacks.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\core.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\core\access.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\core\init.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\core\parseHTML.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\core\ready.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\core\var\rsingleTag.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\addGetHookIf.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\curCSS.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\defaultDisplay.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\hiddenVisibleSelectors.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\support.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\swap.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\var\cssExpand.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\var\getStyles.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\var\isHidden.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\var\rmargin.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\css\var\rnumnonpx.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\data.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\data\Data.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\data\accepts.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\data\var\data_priv.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\data\var\data_user.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\deferred.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\deprecated.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\dimensions.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\effects.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\effects\Tween.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\effects\animatedSelector.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\event.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\event\alias.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\event\support.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\exports\amd.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\exports\global.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\intro.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\manipulation.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\manipulation\_evalUrl.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\manipulation\support.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\manipulation\var\rcheckableType.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\offset.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\outro.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\queue.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\queue\delay.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\selector-native.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\selector-sizzle.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\selector.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\serialize.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\sizzle\dist\sizzle.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\sizzle\dist\sizzle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\sizzle\dist\sizzle.min.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\traversing.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\traversing\findFilter.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\traversing\var\rneedsContext.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\arr.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\class2type.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\concat.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\hasOwn.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\indexOf.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\pnum.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\push.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\rnotwhite.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\slice.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\strundefined.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\support.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\var\toString.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\GITHUB\scheduler\bower_components\jquery\src\wrap.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mock/data.json" afterPath="$PROJECT_DIR$/mock/data.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newEvent/newEventDir.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newEvent/newEventView.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/dataService.js" afterPath="$PROJECT_DIR$/services/dataService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventInfo/eventInfoDir.js" afterPath="$PROJECT_DIR$/eventInfo/eventInfoDir.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventInfo/eventInfoView.html" afterPath="$PROJECT_DIR$/eventInfo/eventInfoView.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runner.html" afterPath="$PROJECT_DIR$/runner.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/scheduler.css" afterPath="$PROJECT_DIR$/css/scheduler.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/board/scheduler.html" afterPath="$PROJECT_DIR$/board/scheduler.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/schedulerComp.iml" afterPath="$PROJECT_DIR$/.idea/schedulerComp.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/board/schedulerDir.js" afterPath="$PROJECT_DIR$/board/schedulerDir.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/utilsService.js" afterPath="$PROJECT_DIR$/services/utilsService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="schedulerComp.iws" />
@@ -121,8 +40,18 @@
       <file leaf-file-name="runner.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/runner.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.730769" vertical-offset="75" max-vertical-offset="946">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state vertical-scroll-proportion="-9.076923" vertical-offset="248" max-vertical-offset="1166">
+              <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newEventDir.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newEvent/newEventDir.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1496">
+              <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -131,18 +60,38 @@
       <file leaf-file-name="schedulerDir.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/board/schedulerDir.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.035715" vertical-offset="495" max-vertical-offset="1320">
-              <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+            <state vertical-scroll-proportion="-7.571429" vertical-offset="448" max-vertical-offset="1540">
+              <caret line="30" column="32" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scheduler.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/board/scheduler.html">
+      <file leaf-file-name="newEventView.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newEvent/newEventView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7805519" vertical-offset="0" max-vertical-offset="1672">
-              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+            <state vertical-scroll-proportion="-15.230769" vertical-offset="132" max-vertical-offset="1232">
+              <caret line="24" column="73" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataService.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/services/dataService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.30379745" vertical-offset="332" max-vertical-offset="1496">
+              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utilsService.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/utilsService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1300" max-vertical-offset="2112">
+              <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -151,41 +100,9 @@
       <file leaf-file-name="data.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mock/data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.6153846" vertical-offset="0" max-vertical-offset="4774">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="4774">
+              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gruntfile.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0384614" vertical-offset="185" max-vertical-offset="946">
-              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="global.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/global.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2790" max-vertical-offset="5214">
-              <caret line="151" column="14" selection-start-line="151" selection-start-column="14" selection-end-line="151" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="global.min.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/global.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="154">
-              <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -208,21 +125,31 @@
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/scheduler.html" />
         <option value="$PROJECT_DIR$/schedulerDir.js" />
-        <option value="$PROJECT_DIR$/eventInfo/eventInfoView.html" />
         <option value="$PROJECT_DIR$/services/utilitiesService.js" />
-        <option value="$PROJECT_DIR$/css/scheduler.css" />
-        <option value="$PROJECT_DIR$/services/dataService.js" />
-        <option value="$PROJECT_DIR$/services/utilsService.js" />
-        <option value="$PROJECT_DIR$/eventInfo/eventInfoDir.js" />
         <option value="$PROJECT_DIR$/config/resourceConst.js" />
         <option value="$PROJECT_DIR$/Gruntfile.json" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/board/schedulerDir.js" />
         <option value="$PROJECT_DIR$/mock/data.json" />
+        <option value="$PROJECT_DIR$/eventInfo/eventInfoView.html" />
+        <option value="$PROJECT_DIR$/eventInfo/eventInfoDir.js" />
         <option value="$PROJECT_DIR$/board/scheduler.html" />
+        <option value="$PROJECT_DIR$/css/scheduler.css" />
+        <option value="$PROJECT_DIR$/newEvent/newEventView.html" />
+        <option value="$PROJECT_DIR$/services/utilsService.js" />
+        <option value="$PROJECT_DIR$/newEvent/newEventDir.js" />
+        <option value="$PROJECT_DIR$/board/schedulerDir.js" />
         <option value="$PROJECT_DIR$/runner.html" />
+        <option value="$PROJECT_DIR$/services/dataService.js" />
       </list>
     </option>
+  </component>
+  <component name="JsGruntFileManager">
+    <gruntfiles>
+      <GruntfileState>
+        <gruntfile-path>$PROJECT_DIR$/Gruntfile.js</gruntfile-path>
+      </GruntfileState>
+    </gruntfiles>
+    <initial>false</initial>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -285,6 +212,90 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedulerComp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="newEvent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedulerComp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mock" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedulerComp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eventInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedulerComp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedulerComp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedulerComp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="board" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -305,8 +316,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\GITHUB\scheduler" />
       <recent name="C:\GITHUB\scheduler\bower_components" />
+      <recent name="C:\GITHUB\scheduler" />
+      <recent name="C:\GITHUB\scheduler\eventInfo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\GITHUB\scheduler\board" />
@@ -315,6 +327,14 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -325,12 +345,14 @@
       <option name="showConsoleOnStdOut" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
       <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -338,16 +360,6 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" />
-      <option name="executablePath" />
-      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -388,20 +400,24 @@
       <created>1411571414061</created>
       <updated>1411571414061</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactoring more">
+      <created>1411572829859</created>
+      <updated>1411572829859</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21934865" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21872015" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20212767" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20425531" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -409,11 +425,12 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -436,12 +453,85 @@
     <MESSAGE value="adding window.staticResources.localization.dayNames for localization" />
     <MESSAGE value="fixing" />
     <MESSAGE value="Extracting to smaller modules, setting grunt and dist folder, creating data service and utilities service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extracting to smaller modules, setting grunt and dist folder, creating data service and utilities service" />
+    <MESSAGE value="refactoring more" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring more" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/runner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1078">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board/schedulerDir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1518">
+          <caret line="55" column="56" selection-start-line="55" selection-start-column="56" selection-end-line="55" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/dataService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="22" max-vertical-offset="880">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newEvent/newEventDir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="700" max-vertical-offset="1496">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newEvent/newEventView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="264" max-vertical-offset="1232">
+          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/scheduler.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="3982">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/utilsService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="968" max-vertical-offset="1892">
+          <caret line="44" column="23" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="4774">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board/scheduler.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="1848">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/runner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="352" max-vertical-offset="3542">
@@ -566,26 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="572">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/scheduler.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9440915" vertical-offset="2887" max-vertical-offset="3762">
-          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eventInfo/eventInfoView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.230769" vertical-offset="0" max-vertical-offset="968">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#1;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -597,52 +667,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/dataService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/utilsService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="968">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#170#390#0" expanded="false" />
-            <element signature="e#429#568#0" expanded="false" />
-            <element signature="e#609#726#0" expanded="false" />
-            <element signature="e#758#1003#0" expanded="false" />
-            <element signature="e#1041#1205#0" expanded="false" />
-            <element signature="e#1231#1909#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eventInfo/eventInfoDir.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1628">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="787">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/global.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="154">
-          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -650,54 +678,114 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3753281" vertical-offset="132" max-vertical-offset="1342">
           <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/global.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2790" max-vertical-offset="5214">
-          <caret line="151" column="14" selection-start-line="151" selection-start-column="14" selection-end-line="151" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0384614" vertical-offset="185" max-vertical-offset="946">
+        <state vertical-scroll-proportion="0.10381077" vertical-offset="185" max-vertical-offset="946">
           <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68733853" vertical-offset="2790" max-vertical-offset="5214">
+          <caret line="151" column="14" selection-start-line="151" selection-start-column="14" selection-end-line="151" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runner.html">
+    <entry file="file://$PROJECT_DIR$/dist/global.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.730769" vertical-offset="75" max-vertical-offset="946">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
+        <state vertical-scroll-proportion="0.028423773" vertical-offset="0" max-vertical-offset="774">
+          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/board/schedulerDir.js">
+    <entry file="file://$PROJECT_DIR$/eventInfo/eventInfoView.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.035715" vertical-offset="495" max-vertical-offset="1320">
-          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="968">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mock/data.json">
+    <entry file="file://$PROJECT_DIR$/eventInfo/eventInfoDir.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6153846" vertical-offset="0" max-vertical-offset="4774">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.3126615" vertical-offset="88" max-vertical-offset="1716">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/board/scheduler.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7805519" vertical-offset="0" max-vertical-offset="1672">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.2473822" vertical-offset="9" max-vertical-offset="1848">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/scheduler.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16708861" vertical-offset="198" max-vertical-offset="3982">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newEvent/newEventView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.230769" vertical-offset="132" max-vertical-offset="1232">
+          <caret line="24" column="73" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newEvent/newEventDir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1496">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mock/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="4774">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.076923" vertical-offset="248" max-vertical-offset="1166">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board/schedulerDir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.571429" vertical-offset="448" max-vertical-offset="1540">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/utilsService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1300" max-vertical-offset="2112">
+          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/dataService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30379745" vertical-offset="332" max-vertical-offset="1496">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding />
         </state>
       </provider>

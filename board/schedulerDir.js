@@ -2,16 +2,18 @@
  * Created by Ilya Vinokurov on 9/22/14.
  */
 
-angular.module('comp-scheduler').directive('schedulerDir', function (utilsService,resourceConst) {
+angular.module('comp-scheduler').directive('schedulerDir', function (utilsService, resourceConst,dataService) {
     return {
         restrict: 'A',
         templateUrl: 'board/scheduler.html',
         scope: {
             minHours: '@',
             maxHours: '@',
-            events: '='
+            events: '=',
+            loadData: '&'
         },
         link: function (scope, element, attrs, controllers) {
+            scope.showNewDialog = false;
             scope.minHours = parseInt(scope.minHours) || 6;
             scope.maxHours = parseInt(scope.maxHours) || 24;
             scope.cursor = null;
@@ -28,7 +30,7 @@ angular.module('comp-scheduler').directive('schedulerDir', function (utilsServic
                 console.log('events.length changed');
                 if (scope.events) {
                     if (!scope.cursor)
-                        scope.cursor = utilsService.findCurrentWeek(scope.events,scope.currentWeek);
+                        scope.cursor = utilsService.findCurrentWeek(scope.events, scope.currentWeek);
                     scope.data = scope.events[scope.cursor];
                 }
             });
@@ -38,6 +40,14 @@ angular.module('comp-scheduler').directive('schedulerDir', function (utilsServic
             scope.buildBlockStyle = function (event) {
                 var start = utilsService.timeStringToFloat(event.startTime) - scope.minHours;
                 return 'width:' + (utilsService.durationToFloat(event.duration) * 100) + '%; right: ' + ((start * 100)) + '%;';
+            };
+            scope.showNew = function () {
+                scope.showNewDialog = true;
+            };
+            scope.createNewEvent = function (event) {
+                 dataService.create(event,function(){
+                     scope.loadData();
+                 });
             };
             scope.onSelect = function (event) {
                 scope.selectedEvent = event;

@@ -1,11 +1,18 @@
 <div class="scheduler-wrapper">
-    <div ng-show="selectedEvent" class="scheduler-wrapper-overlay"></div>
+
 
     <div event-info
          selected-event="selectedEvent"
          min-hours="{{minHours}}"
          max-hours="{{maxHours}}">
     </div>
+    <div new-event
+         create-new-event="createNewEvent(event)"
+         min-hours="{{minHours}}"
+         max-hours="{{maxHours}}"
+         show-new-dialog="showNewDialog">
+    </div>
+
 
     <div class="scheduler-wrapper-menu">
         <div class="scheduler-wrapper-menu-left">
@@ -15,6 +22,7 @@
         </div>
         <div class="scheduler-wrapper-menu-mid">
             <b>{{data.week}}</b>
+            <button class="btn btn-success" ng-click="showNew()"></button>
         </div>
         <div class="scheduler-wrapper-menu-right">
             <a class="btn btn-primary" ng-disabled="events.length-1==cursor" ng-click="nextWeek()">
