@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="779b0742-2e08-44d4-8654-fd31a2ca2f4b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newEvent/newEventDir.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/newEvent/newEventView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/dataService.js" afterPath="$PROJECT_DIR$/services/dataService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventInfo/eventInfoDir.js" afterPath="$PROJECT_DIR$/eventInfo/eventInfoDir.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eventInfo/eventInfoView.html" afterPath="$PROJECT_DIR$/eventInfo/eventInfoView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runner.html" afterPath="$PROJECT_DIR$/runner.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/scheduler.css" afterPath="$PROJECT_DIR$/css/scheduler.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/board/scheduler.html" afterPath="$PROJECT_DIR$/board/scheduler.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/schedulerComp.iml" afterPath="$PROJECT_DIR$/.idea/schedulerComp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/board/schedulerDir.js" afterPath="$PROJECT_DIR$/board/schedulerDir.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/utilsService.js" afterPath="$PROJECT_DIR$/services/utilsService.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="schedulerComp.iws" />
@@ -70,18 +60,28 @@
       <file leaf-file-name="newEventView.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/newEvent/newEventView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.230769" vertical-offset="132" max-vertical-offset="1232">
+            <state vertical-scroll-proportion="-2.1923077" vertical-offset="471" max-vertical-offset="1232">
               <caret line="24" column="73" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataService.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="dataService.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/dataService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30379745" vertical-offset="332" max-vertical-offset="1496">
-              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="1496">
+              <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scheduler.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/scheduler.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2007" max-vertical-offset="4136">
+              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -102,6 +102,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="4774">
               <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scheduler.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/board/scheduler.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.34691197" vertical-offset="132" max-vertical-offset="1980">
+              <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -132,14 +142,14 @@
         <option value="$PROJECT_DIR$/mock/data.json" />
         <option value="$PROJECT_DIR$/eventInfo/eventInfoView.html" />
         <option value="$PROJECT_DIR$/eventInfo/eventInfoDir.js" />
-        <option value="$PROJECT_DIR$/board/scheduler.html" />
-        <option value="$PROJECT_DIR$/css/scheduler.css" />
         <option value="$PROJECT_DIR$/newEvent/newEventView.html" />
         <option value="$PROJECT_DIR$/services/utilsService.js" />
         <option value="$PROJECT_DIR$/newEvent/newEventDir.js" />
         <option value="$PROJECT_DIR$/board/schedulerDir.js" />
         <option value="$PROJECT_DIR$/runner.html" />
         <option value="$PROJECT_DIR$/services/dataService.js" />
+        <option value="$PROJECT_DIR$/css/scheduler.css" />
+        <option value="$PROJECT_DIR$/board/scheduler.html" />
       </list>
     </option>
   </component>
@@ -311,7 +321,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bontime" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
@@ -404,7 +414,11 @@
       <created>1411572829859</created>
       <updated>1411572829859</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add new events (bulk) and dataService">
+      <created>1411643995313</created>
+      <updated>1411643995313</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -412,8 +426,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21872015" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21934865" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -427,7 +442,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -454,7 +468,8 @@
     <MESSAGE value="fixing" />
     <MESSAGE value="Extracting to smaller modules, setting grunt and dist folder, creating data service and utilities service" />
     <MESSAGE value="refactoring more" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring more" />
+    <MESSAGE value="Add new events (bulk) and dataService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new events (bulk) and dataService" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -656,6 +671,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.384615" vertical-offset="0" max-vertical-offset="572">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -707,6 +723,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="968">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -714,30 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3126615" vertical-offset="88" max-vertical-offset="1716">
           <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/board/scheduler.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2473822" vertical-offset="9" max-vertical-offset="1848">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/scheduler.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16708861" vertical-offset="198" max-vertical-offset="3982">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newEvent/newEventView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.230769" vertical-offset="132" max-vertical-offset="1232">
-          <caret line="24" column="73" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="73" />
           <folding />
         </state>
       </provider>
@@ -766,14 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/board/schedulerDir.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.571429" vertical-offset="448" max-vertical-offset="1540">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/utilsService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1300" max-vertical-offset="2112">
@@ -784,8 +769,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/dataService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30379745" vertical-offset="332" max-vertical-offset="1496">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="332" max-vertical-offset="1496">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board/schedulerDir.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.571429" vertical-offset="448" max-vertical-offset="1540">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/scheduler.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2007" max-vertical-offset="4136">
+          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newEvent/newEventView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1923077" vertical-offset="471" max-vertical-offset="1232">
+          <caret line="24" column="73" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board/scheduler.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34691197" vertical-offset="132" max-vertical-offset="1980">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
           <folding />
         </state>
       </provider>
