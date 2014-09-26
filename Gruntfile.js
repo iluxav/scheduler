@@ -8,13 +8,29 @@ module.exports = function(grunt) { // 1
             dist: {
                 // the files to concatenate
                 src: [
+                    "customResources/**/jquery*.js",
                     "config/*.js",
-                    "services/*.js",
+                    "services/utilsService.js",
+                    "services/dataService.js",
                     "board/*.js",
-                    "eventInfo/*.js"
+                    "eventInfo/*.js",
+                    "newEvent/*.js"
                 ],
                 // the location of the resulting JS file
                 dest: 'dist/global.js'
+            }
+        },
+        concat_css: {
+            options: {
+                // Task-specific options go here.
+            },
+            all: {
+                dest: "dist/global.min.css",
+                src: [
+                    "customResources/**/jquery*.css",
+                    "css/*.css"
+
+                ]
             }
         },
         uglify: {
@@ -31,7 +47,8 @@ module.exports = function(grunt) { // 1
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-concat-css');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('default', ['concat','uglify']);
+    grunt.registerTask('default', ['concat','concat_css','uglify']);
 }
