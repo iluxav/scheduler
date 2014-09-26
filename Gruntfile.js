@@ -18,7 +18,7 @@ module.exports = function(grunt) { // 1
                     "newEvent/*.js"
                 ],
                 // the location of the resulting JS file
-                dest: 'dist/global.js'
+                dest: 'dist/scheduler.all.js'
             }
         },
         concat_css: {
@@ -26,7 +26,7 @@ module.exports = function(grunt) { // 1
                 // Task-specific options go here.
             },
             all: {
-                dest: "dist/global.min.css",
+                dest: "dist/scheduler.all.min.css",
                 src: [
                     "customResources/**/jquery*.css",
                     "css/*.css"
@@ -40,7 +40,7 @@ module.exports = function(grunt) { // 1
             },
             dist: {
                 files: {
-                    'dist/global.min.js': ['<%= concat.dist.src %>']
+                    'dist/scheduler.all.min.js': ['<%= concat.dist.src %>']
                 }
             }
         },
