@@ -8,7 +8,7 @@ angular.module('comp-scheduler').directive('newEvent', function (utilsService) {
 
     return {
         restrict: 'A',
-        templateUrl: 'newEvent/newEventView.html',
+        templateUrl: '../newEvent/newEventView.html',
         scope: {
             createNewEvent: '&',
             showNewDialog: '=',

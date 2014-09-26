@@ -14,17 +14,18 @@
 
     <link rel="stylesheet" href="dist/global.min.css"/>
 
+
+    <script src="dist/global.js" type="text/javascript"></script>
     <script type="text/javascript">
-        angular.module('comp-scheduler', []).controller('runnerCtrl', function ($scope, dataService) {
-           $scope.loadData=function(){
-               dataService.get(function (data) {
-                   $scope.data = data;
-               });
-           };
+        angular.module('comp-scheduler').controller('runnerCtrl', function ($scope, dataService) {
+            $scope.loadData=function(){
+                dataService.get(function (data) {
+                    $scope.data = data;
+                });
+            };
             $scope.loadData();
         });
     </script>
-    <script src="dist/global.js" type="text/javascript"></script>
 </head>
 <body>
 <div ng-controller="runnerCtrl">

@@ -8,7 +8,7 @@ angular.module('comp-scheduler').directive('eventInfo', function (utilsService) 
 
     return {
         restrict: 'A',
-        templateUrl: 'eventInfo/eventInfoView.html',
+        templateUrl: '../eventInfo/eventInfoView.html',
         scope: {
             selectedEvent: '=',
             minHours: '@',

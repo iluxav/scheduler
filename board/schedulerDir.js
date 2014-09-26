@@ -5,7 +5,7 @@
 angular.module('comp-scheduler').directive('schedulerDir', function (utilsService, resourceConst,dataService) {
     return {
         restrict: 'A',
-        templateUrl: 'board/scheduler.html',
+        templateUrl: '../board/schedulerView.html',
         scope: {
             minHours: '@',
             maxHours: '@',

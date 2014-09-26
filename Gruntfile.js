@@ -8,6 +8,7 @@ module.exports = function(grunt) { // 1
             dist: {
                 // the files to concatenate
                 src: [
+                    "dist/templates.js",
                     "customResources/**/jquery*.js",
                     "config/*.js",
                     "services/utilsService.js",
@@ -42,13 +43,22 @@ module.exports = function(grunt) { // 1
                     'dist/global.min.js': ['<%= concat.dist.src %>']
                 }
             }
+        },
+        html2js: {
+            options: {
+                // custom options, see below
+            },
+            main: {
+                src: ['**/*View.html'],
+                dest: 'dist/templates.js'
+            }
         }
 
     });
-
+    grunt.loadNpmTasks('grunt-html2js');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-concat-css');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('default', ['concat','concat_css','uglify']);
+    grunt.registerTask('default', ['html2js','concat','concat_css','uglify']);
 }
