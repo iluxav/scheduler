@@ -12,13 +12,13 @@
     <script src="bower_components/angular/angular.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 
-    <link rel="stylesheet" href="dist/global.min.css"/>
+    <link rel="stylesheet" href="dist/scheduler.all.min.css"/>
 
 
-    <script src="dist/global.js" type="text/javascript"></script>
+    <script src="dist/scheduler.all.js" type="text/javascript"></script>
     <script type="text/javascript">
         angular.module('comp-scheduler').controller('runnerCtrl', function ($scope, dataService) {
-            $scope.loadData=function(){
+            $scope.loadData = function () {
                 dataService.get(function (data) {
                     $scope.data = data;
                 });
@@ -31,6 +31,7 @@
 <div ng-controller="runnerCtrl">
     <div scheduler-dir
          load-data="loadData()"
+         on-created="onCreated(event,weeks)"
          min-hours="{{data.business.businessConfig.workingHours.from}}"
          max-hours="{{data.business.businessConfig.workingHours.to}}"
          events="data.events">

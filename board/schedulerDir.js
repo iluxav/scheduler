@@ -10,7 +10,8 @@ angular.module('comp-scheduler').directive('schedulerDir', function (utilsServic
             minHours: '@',
             maxHours: '@',
             events: '=',
-            loadData: '&'
+            loadData: '&',
+            onCreated:'&'
         },
         link: function (scope, element, attrs, controllers) {
             scope.showNewDialog = false;
@@ -44,10 +45,8 @@ angular.module('comp-scheduler').directive('schedulerDir', function (utilsServic
             scope.showNew = function () {
                 scope.showNewDialog = true;
             };
-            scope.createNewEvent = function (event) {
-                 dataService.create(event,function(){
-                     scope.loadData();
-                 });
+            scope.createNewEvent = function (event,weeks) {
+               scope.onCreated({event:event,weeks:weeks});
             };
             scope.onSelect = function (event) {
                 scope.selectedEvent = event;

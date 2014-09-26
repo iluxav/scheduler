@@ -43,14 +43,16 @@ angular.module('comp-scheduler').directive('newEvent', function (utilsService) {
                 scope.event.endTime = utilsService.floatToTime(endTimeFloat);
                 var date = $("#datepicker").data();
                 var selectedDate = new Date(date.datepicker.selectedYear, date.datepicker.selectedMonth, date.datepicker.selectedDay);
-                scope.event.week = utilsService.getWeek(selectedDate);
-                scope.event.weeks = utilsService.getWeeks(selectedDate,scope.event.occurrences);
+                var weeks =[];
+                weeks = weeks.concat(utilsService.getWeeks(selectedDate,scope.event.occurrences));
                 scope.createNewEvent({
                     event: {
                         day: selectedDate.getDay() + 1,
                         week: scope.event.week,
                         event: scope.event
-                    }});
+                    },
+                    weeks:weeks
+                });
             }
             scope.close = function () {
                 scope.showNewDialog = false;
