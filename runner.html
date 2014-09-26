@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="dist/global.min.css"/>
 
     <script type="text/javascript">
-
         angular.module('comp-scheduler', []).controller('runnerCtrl', function ($scope, dataService) {
            $scope.loadData=function(){
                dataService.get(function (data) {
