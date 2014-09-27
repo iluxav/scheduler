@@ -59,7 +59,7 @@ angular.module('comp-scheduler').factory('utilsService', function () {
     }
     function getWeeks(date,numberOfOccurences){
         var weeks =[];
-        for(var i=0;i<=numberOfOccurences;i++){
+        for(var i=0;i<numberOfOccurences;i++){
             var newDate=new Date();
             newDate.setDate(date.getDate() + (7*i));
             weeks.push(getWeek(newDate));
