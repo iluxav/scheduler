@@ -27,11 +27,10 @@ angular.module('comp-scheduler').directive('schedulerDir', function (utilsServic
             scope.cells = (scope.maxHours - scope.minHours);
             scope.cellWidth = "width:" + (100 / (scope.cells + 2)) + '%';
 
-            scope.$watch('events.length', function () {
+            scope.$watch('events', function () {
                 console.log('events.length changed');
                 if (scope.events) {
-                    if (!scope.cursor)
-                        scope.cursor = utilsService.findCurrentWeek(scope.events, scope.currentWeek);
+                    scope.cursor = utilsService.findCurrentWeek(scope.events, scope.currentWeek);
                     scope.data = scope.events[scope.cursor];
                 }
             });

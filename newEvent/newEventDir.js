@@ -49,7 +49,8 @@ angular.module('comp-scheduler').directive('newEvent', function (utilsService) {
                     event: {
                         day: selectedDate.getDay() + 1,
                         week: scope.event.week,
-                        event: scope.event
+                        event: scope.event,
+                        startDate:utilsService.getFirstDayOfWeekDate(selectedDate)
                     },
                     weeks:weeks
                 });

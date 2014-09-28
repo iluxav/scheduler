@@ -45,24 +45,34 @@ angular.module('comp-scheduler').factory('utilsService', function () {
     function getWeek(d) {
         d = new Date(d);
         var day = d.getDay();
-        var diff = d.getDate() - day + (day == 0 ? -7 : 0); // adjust when day is sunday
+        var diff = d.getDate() - day; // adjust when day is sunday
         var newStartDate = d.setDate(diff);
 
         var start = new Date(newStartDate);
-        var newEndDate = start.getDate() + 6;
-        var newEndDate = new Date().setDate(newEndDate);
+        var newEndDate = new Date(newStartDate);
+        var newEnd = start.getDate() + 6;
+        newEndDate.setDate(newEnd);
         var end = new Date(newEndDate);
         var res = start.getDate().toString() + '/' + (start.getMonth() + 1).toString() + '/' + start.getFullYear().toString() + "-" +
             end.getDate().toString() + '/' + (end.getMonth() + 1).toString() + '/' + end.getFullYear().toString();
         console.log(res);
         return res;
     }
-    function getWeeks(date,numberOfOccurences){
-        var weeks =[];
-        for(var i=0;i<numberOfOccurences;i++){
-            var newDate=new Date();
-            newDate.setDate(date.getDate() + (7*i));
-            weeks.push(getWeek(newDate));
+
+    function getFirstDayOfWeekDate(d) {
+        d = new Date(d);
+        var day = d.getDay();
+        var diff = d.getDate() - day; // adjust when day is sunday
+        var newStartDate = d.setDate(diff);
+
+        return new Date(newStartDate);
+    }
+
+    function getWeeks(date, numberOfOccurences) {
+        var weeks = [];
+        for (var i = 0; i < numberOfOccurences; i++) {
+            date.setDate(date.getDate() + (i == 0 ? 0 : 7));
+            weeks.push(getWeek(date));
         }
         return weeks;
     }
@@ -84,7 +94,8 @@ angular.module('comp-scheduler').factory('utilsService', function () {
         floatToTime: floatToTime,
         buildHours: buildHours,
         getWeek: getWeek,
-        getWeeks:getWeeks,
-        findCurrentWeek:findCurrentWeek
+        getWeeks: getWeeks,
+        findCurrentWeek: findCurrentWeek,
+        getFirstDayOfWeekDate: getFirstDayOfWeekDate
     };
 });
