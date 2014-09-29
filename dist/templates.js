@@ -136,53 +136,62 @@ angular.module("../newEvent/newEventView.html", []).run(["$templateCache", funct
   $templateCache.put("../newEvent/newEventView.html",
     "<div ng-show=\"showNewDialog\" class=\"scheduler-wrapper-overlay\"></div>\n" +
     "<div ng-show=\"showNewDialog\" class=\"modal scheduler-wrapper-popup\">\n" +
-    "    <div class=\"modal-dialog\">\n" +
-    "        <div class=\"modal-content\">\n" +
-    "            <div class=\"modal-header\">\n" +
-    "                <button type=\"button\" ng-click=\"close()\" class=\"close\"><span aria-hidden=\"true\">&times;</span><span\n" +
-    "                        class=\"sr-only\">Close</span></button>\n" +
-    "                <h4 class=\"modal-title\">{{event.title}}</h4>\n" +
-    "            </div>\n" +
-    "            <div class=\"modal-body\">\n" +
+    "	<div class=\"modal-dialog\">\n" +
+    "		<div class=\"modal-content\">\n" +
+    "			<form name=\"createNewEvent\" ng-submit=\"create(createNewEvent.$valid)\" novalidate>\n" +
+    "				<div class=\"modal-header\">\n" +
+    "					<button type=\"button\" ng-click=\"close()\" class=\"close\"><span aria-hidden=\"true\">&times;</span><span\n" +
+    "							class=\"sr-only\">Close</span></button>\n" +
+    "					<h4 class=\"modal-title\">{{event.title}}</h4>\n" +
+    "				</div>\n" +
+    "				<div class=\"modal-body\">\n" +
     "\n" +
-    "                <div class=\"panel panel-default\">\n" +
+    "					<div class=\"panel panel-default\">\n" +
     "\n" +
-    "                    <div class=\"panel-body\">\n" +
+    "						<div class=\"panel-body\">\n" +
     "\n" +
-    "                        <p>\n" +
-    "                            <h5>מתחיל</h5>\n" +
-    "                            <input class=\"form-control mid\" type=\"text\" id=\"datepicker\"/>\n" +
-    "                            <select class=\"form-control mid\" ng-model=\"event.startTime\">\n" +
-    "                                <option ng-repeat=\"h in hoursWithHalfs\" value=\"{{h}}\">{{h}}</option>\n" +
-    "                            </select>\n" +
-    "                        </p>\n" +
-    "                        <p>\n" +
-    "                            <h5>כמות</h5>\n" +
-    "                           <input type=\"text\" ng-model=\"event.occurrences\" class=\"form-control small\" value=\"1\" required=\"true\" />\n" +
-    "                        </p>\n" +
-    "                        <p>\n" +
-    "                        <h5>כמה זמן?</h5>\n" +
-    "                        <input class=\"form-control small\" step=\"15\" type=\"number\"\n" +
-    "                               ng-model=\"event.duration.m\">&nbsp;<span>שעות</span>\n" +
-    "                        <input class=\"form-control small\" type=\"number\" ng-model=\"event.duration.h\">&nbsp;<span>דקות</span>\n" +
-    "                        </p>\n" +
-    "                        <p>\n" +
-    "                            <textarea class=\"form-control\" ng-model=\"event.title\"></textarea>\n" +
-    "                        </p>\n" +
     "\n" +
-    "                        <p>\n" +
-    "                            <textarea class=\"form-control\" rows=\"4\" ng-model=\"event.about\"></textarea>\n" +
-    "                        </p>\n" +
-    "                    </div>\n" +
-    "                </div>\n" +
-    "            </div>\n" +
-    "            <div class=\"modal-footer\">\n" +
-    "                <button type=\"button\" ng-click=\"close()\" class=\"btn btn-default\">סגור</button>\n" +
-    "                <button type=\"button\" ng-click=\"create()\"  class=\"btn btn-primary\">צור חדש</button>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "        <!-- /.modal-content -->\n" +
-    "    </div>\n" +
-    "    <!-- /.modal-dialog -->\n" +
+    "							<p>\n" +
+    "							<h5>מתחיל</h5>\n" +
+    "							<input class=\"form-control mid\" required type=\"text\" name=\"date\" ng-model=\"date\" id=\"datepicker\"/>\n" +
+    "							<p ng-show=\"createNewEvent.date.$invalid\"\n" +
+    "							   class=\"help-block\">Please eneter the Date</p>\n" +
+    "\n" +
+    "							<select class=\"form-control mid\" ng-model=\"event.startTime\">\n" +
+    "								<option ng-repeat=\"h in hoursWithHalfs\" value=\"{{h}}\">{{h}}</option>\n" +
+    "							</select>\n" +
+    "							</p>\n" +
+    "							<p>\n" +
+    "							<h5>כמות</h5>\n" +
+    "							<input type=\"text\" ng-model=\"event.occurrences\" class=\"form-control small\" value=\"1\"\n" +
+    "							       required=\"true\"/>\n" +
+    "							</p>\n" +
+    "							<p>\n" +
+    "							<h5>כמה זמן?</h5>\n" +
+    "							<input class=\"form-control small\" step=\"15\" type=\"number\"\n" +
+    "							       ng-model=\"event.duration.m\">&nbsp;<span>שעות</span>\n" +
+    "							<input class=\"form-control small\" type=\"number\"\n" +
+    "							       ng-model=\"event.duration.h\">&nbsp;<span>דקות</span>\n" +
+    "							</p>\n" +
+    "							<p>\n" +
+    "								<textarea class=\"form-control\" ng-model=\"event.title\"></textarea>\n" +
+    "							</p>\n" +
+    "\n" +
+    "							<p>\n" +
+    "								<textarea class=\"form-control\" rows=\"4\" ng-model=\"event.about\"></textarea>\n" +
+    "							</p>\n" +
+    "\n" +
+    "						</div>\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "				<div class=\"modal-footer\">\n" +
+    "					<button type=\"button\" ng-click=\"close()\" class=\"btn btn-default\">סגור</button>\n" +
+    "					<button type=\"submit\" ng-click=\"create()\" class=\"btn btn-primary\">צור חדש</button>\n" +
+    "				</div>\n" +
+    "			</form>\n" +
+    "		</div>\n" +
+    "		<!-- /.modal-content -->\n" +
+    "	</div>\n" +
+    "	<!-- /.modal-dialog -->\n" +
     "</div><!-- /.modal -->");
 }]);

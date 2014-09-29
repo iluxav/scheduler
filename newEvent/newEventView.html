@@ -1,51 +1,60 @@
 <div ng-show="showNewDialog" class="scheduler-wrapper-overlay"></div>
 <div ng-show="showNewDialog" class="modal scheduler-wrapper-popup">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" ng-click="close()" class="close"><span aria-hidden="true">&times;</span><span
-                        class="sr-only">Close</span></button>
-                <h4 class="modal-title">{{event.title}}</h4>
-            </div>
-            <div class="modal-body">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<form name="createNewEvent" ng-submit="create(createNewEvent.$valid)" novalidate>
+				<div class="modal-header">
+					<button type="button" ng-click="close()" class="close"><span aria-hidden="true">&times;</span><span
+							class="sr-only">Close</span></button>
+					<h4 class="modal-title">{{event.title}}</h4>
+				</div>
+				<div class="modal-body">
 
-                <div class="panel panel-default">
+					<div class="panel panel-default">
 
-                    <div class="panel-body">
+						<div class="panel-body">
 
-                        <p>
-                            <h5>מתחיל</h5>
-                            <input class="form-control mid" type="text" id="datepicker"/>
-                            <select class="form-control mid" ng-model="event.startTime">
-                                <option ng-repeat="h in hoursWithHalfs" value="{{h}}">{{h}}</option>
-                            </select>
-                        </p>
-                        <p>
-                            <h5>כמות</h5>
-                           <input type="text" ng-model="event.occurrences" class="form-control small" value="1" required="true" />
-                        </p>
-                        <p>
-                        <h5>כמה זמן?</h5>
-                        <input class="form-control small" step="15" type="number"
-                               ng-model="event.duration.m">&nbsp;<span>שעות</span>
-                        <input class="form-control small" type="number" ng-model="event.duration.h">&nbsp;<span>דקות</span>
-                        </p>
-                        <p>
-                            <textarea class="form-control" ng-model="event.title"></textarea>
-                        </p>
 
-                        <p>
-                            <textarea class="form-control" rows="4" ng-model="event.about"></textarea>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" ng-click="close()" class="btn btn-default">סגור</button>
-                <button type="button" ng-click="create()"  class="btn btn-primary">צור חדש</button>
-            </div>
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
+							<p>
+							<h5>מתחיל</h5>
+							<input class="form-control mid" required type="text" name="date" ng-model="date" id="datepicker"/>
+							<p ng-show="createNewEvent.date.$invalid"
+							   class="help-block">Please enter the Date</p>
+
+							<select class="form-control mid" ng-model="event.startTime">
+								<option ng-repeat="h in hoursWithHalfs" value="{{h}}">{{h}}</option>
+							</select>
+							</p>
+							<p>
+							<h5>כמות</h5>
+							<input type="text" ng-model="event.occurrences" class="form-control small" value="1"
+							       required="true"/>
+							</p>
+							<p>
+							<h5>כמה זמן?</h5>
+							<input class="form-control small" step="15" type="number"
+							       ng-model="event.duration.m">&nbsp;<span>שעות</span>
+							<input class="form-control small" type="number"
+							       ng-model="event.duration.h">&nbsp;<span>דקות</span>
+							</p>
+							<p>
+								<textarea class="form-control" ng-model="event.title"></textarea>
+							</p>
+
+							<p>
+								<textarea class="form-control" rows="4" ng-model="event.about"></textarea>
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" ng-click="close()" class="btn btn-default">סגור</button>
+					<button type="submit" ng-click="create()" class="btn btn-primary">צור חדש</button>
+				</div>
+			</form>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
 </div><!-- /.modal -->
