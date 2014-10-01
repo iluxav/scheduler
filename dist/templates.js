@@ -63,7 +63,7 @@ angular.module("../board/schedulerView.html", []).run(["$templateCache", functio
     "                            <i class=\"glyphicon glyphicon-ok\"></i>\n" +
     "                        </div>\n" +
     "                        <span class=\"scheduler-wrapper-label-space-left scheduler-wrapper-label\">\n" +
-    "                            23\n" +
+    "                            {{event.maxAttendees}}\n" +
     "                        </span>\n" +
     "\n" +
     "                        <p class=\"scheduler-wrapper-block-content\">\n" +
