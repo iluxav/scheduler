@@ -25,7 +25,7 @@ angular.module("../board/schedulerView.html", []).run(["$templateCache", functio
     "            </a>\n" +
     "            <a class=\"btn btn-success displayInline\"  ng-click=\"showNew()\">\n" +
     "                <i class=\"glyphicon glyphicon-plus\"></i>\n" +
-    "                <span>צור אירועה חדש</span>\n" +
+    "                <span>צור אירוע חדש</span>\n" +
     "            </a>\n" +
     "        </div>\n" +
     "        <div class=\"scheduler-wrapper-menu-mid\">\n" +
@@ -160,6 +160,11 @@ angular.module("../newEvent/newEventView.html", []).run(["$templateCache", funct
     "							<div class=\"form-group\" ng-class=\"{'has-error': createNewEvent.occurrences.$invalid}\">\n" +
     "								<h5>כמות</h5>\n" +
     "								<input type=\"text\" ng-model=\"event.occurrences\" name=\"occurrences\" class=\"form-control small\" value=\"1\"\n" +
+    "								       required=\"true\"/>\n" +
+    "							</div>\n" +
+    "							<div class=\"form-group\" ng-class=\"{'has-error': createNewEvent.maxAttendees.$invalid}\">\n" +
+    "								<h5>משתתפים כמות</h5>\n" +
+    "								<input type=\"text\" ng-model=\"event.maxAttendees\" name=\"maxAttendees\" class=\"form-control small\" value=\"1\"\n" +
     "								       required=\"true\"/>\n" +
     "							</div>\n" +
     "							<div class=\"form-group\" ng-class=\"{'has-error': createNewEvent.minutes.$invalid || createNewEvent.hours.$invalid}\">\n" +

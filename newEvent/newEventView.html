@@ -26,6 +26,11 @@
 								<input type="text" ng-model="event.occurrences" name="occurrences" class="form-control small" value="1"
 								       required="true"/>
 							</div>
+							<div class="form-group" ng-class="{'has-error': createNewEvent.maxAttendees.$invalid}">
+								<h5>משתתפים כמות</h5>
+								<input type="text" ng-model="event.maxAttendees" name="maxAttendees" class="form-control small" value="1"
+								       required="true"/>
+							</div>
 							<div class="form-group" ng-class="{'has-error': createNewEvent.minutes.$invalid || createNewEvent.hours.$invalid}">
 								<h5>כמה זמן?</h5>
 								<input class="form-control small" required step="15" type="number"
