@@ -12,7 +12,7 @@ angular.module('comp-scheduler').directive('schedulerDir', function (utilsServic
 			events: '=',
 			loadData: '&',
 			onCreated: '&',
-			getMoreInfo:'&'
+			getMoreInfo: '&'
 		},
 		link: function (scope, element, attrs, controllers) {
 			scope.showNewDialog = false;
@@ -51,8 +51,11 @@ angular.module('comp-scheduler').directive('schedulerDir', function (utilsServic
 			scope.onSelect = function (event) {
 				scope.selectedEvent = event;
 				if (scope.getMoreInfo) {
-					scope.getMoreInfo(event.uEventId, function (moreInfo) {
-						scope.selectedEvent.moreInfo = moreInfo;
+					scope.getMoreInfo({
+						uEventId: event.uEventId,
+						callback: function (moreInfo) {
+							scope.selectedEvent.moreInfo = moreInfo;
+						}
 					});
 				}
 			};

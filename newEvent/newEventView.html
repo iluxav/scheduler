@@ -11,41 +11,58 @@
 				<div class="modal-body">
 					<div class="panel panel-default">
 						<div class="panel-body">
-							<h5>מתחיל</h5>
+							<div class="row">
+								<div class="col-md-8">
+									<h5>מתחיל</h5>
 
-							<div class="form-group" ng-class="{'has-error': createNewEventForm.date.$invalid || createNewEventForm.startTime.$invalid}">
-								<input class="form-control mid" required type="text" name="date" ng-model="date"
-								       id="datepicker"/>
-								<select class="form-control mid" required ng-model="event.startTime" name="startTime">
-									<option ng-repeat="h in hoursWithHalfs" value="{{h}}">{{h}}</option>
-								</select>
-							</div>
+									<div class="form-group"
+									     ng-class="{'has-error': createNewEventForm.date.$invalid || createNewEventForm.startTime.$invalid}">
+										<input class="form-control mid" required type="text" name="date" ng-model="date"
+										       id="datepicker"/>
+										<select class="form-control mid" required ng-model="event.startTime"
+										        name="startTime">
+											<option ng-repeat="h in hoursWithHalfs" value="{{h}}">{{h}}</option>
+										</select>
+									</div>
 
-							<div class="form-group" ng-class="{'has-error': createNewEventForm.occurrences.$invalid}">
-								<h5>כמות</h5>
-								<input type="text" ng-model="event.occurrences" name="occurrences" class="form-control small" value="1"
-								       required="true"/>
-							</div>
-							<div class="form-group" ng-class="{'has-error': createNewEventForm.maxAttendees.$invalid}">
-								<h5>משתתפים כמות</h5>
-								<input type="text" ng-model="event.maxAttendees" name="maxAttendees" class="form-control small" value="1"
-								       required="true"/>
-							</div>
-							<div class="form-group" ng-class="{'has-error': createNewEventForm.minutes.$invalid || createNewEventForm.hours.$invalid}">
-								<h5>כמה זמן?</h5>
-								<input class="form-control small" required step="15" type="number"
-								       ng-model="event.duration.m" name="minutes">&nbsp;<span>:</span>&nbsp;
-								<input class="form-control small" required type="number" name="hours"
-								       ng-model="event.duration.h">
-							</div>
-							<div class="form-group"  ng-class="{'has-error': createNewEventForm.title.$invalid}">
-								<textarea required class="form-control" ng-model="event.title" name="title"></textarea>
-							</div>
+									<div class="form-group"
+									     ng-class="{'has-error': createNewEventForm.occurrences.$invalid}">
+										<h5>כמות</h5>
+										<input type="text" ng-model="event.occurrences" name="occurrences"
+										       class="form-control small" value="1"
+										       required="true"/>
+									</div>
+									<div class="form-group"
+									     ng-class="{'has-error': createNewEventForm.maxAttendees.$invalid}">
+										<h5>משתתפים כמות</h5>
+										<input type="text" ng-model="event.maxAttendees" name="maxAttendees"
+										       class="form-control small" value="1"
+										       required="true"/>
+									</div>
+									<div class="form-group"
+									     ng-class="{'has-error': createNewEventForm.minutes.$invalid || createNewEventForm.hours.$invalid}">
+										<h5>כמה זמן?</h5>
+										<input class="form-control small" required step="15" type="number"
+										       ng-model="event.duration.m" name="minutes">&nbsp;<span>:</span>&nbsp;
+										<input class="form-control small" required type="number" name="hours"
+										       ng-model="event.duration.h">
+									</div>
+									<div class="form-group" ng-class="{'has-error': createNewEventForm.title.$invalid}">
+										<textarea required class="form-control" ng-model="event.title"
+										          name="title"></textarea>
+									</div>
 
-							<div class="form-group">
-								<textarea class="form-control" rows="4" ng-model="event.about"></textarea>
-							</div>
+									<div class="form-group">
+										<textarea class="form-control" rows="4" ng-model="event.about"></textarea>
+									</div>
 
+								</div>
+								<div class="col-md-4">
+									<ul>
+										<li ng-repeat="ev in event.moreInfo.events">{{ev.title}}</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
