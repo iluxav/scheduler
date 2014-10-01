@@ -19,7 +19,7 @@ angular.module('comp-scheduler').directive('schedulerDir', function (utilsServic
             scope.maxHours = parseInt(scope.maxHours) || 24;
             scope.cursor = null;
             scope.currentWeek = utilsService.getWeek(new Date());
-            scope.dayOfWeek = new Date().getDay();
+            scope.dayOfWeek = new Date().getDay() +1;
             scope.selectedEvent = null;
             scope.dayNames = resourceConst.dayNames;
             scope.data = [];

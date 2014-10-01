@@ -54,7 +54,7 @@ angular.module("../board/schedulerView.html", []).run(["$templateCache", functio
     "        <tbody>\n" +
     "        <tr ng-repeat=\"day in data.days track by $index\"\n" +
     "            ng-class=\"{'today': dayOfWeek ==day.day && currentWeek==data.week}\">\n" +
-    "            <td style=\"{{cellWidth}}\">{{dayNames[day.day-1]}}</td>\n" +
+    "            <td style=\"{{cellWidth}}\">{{dayNames[day.day]}}</td>\n" +
     "            <td style=\"{{cellWidth}}\">\n" +
     "                <div class=\"blockHolder\" ng-repeat=\"event in day.events track by $index\"\n" +
     "                     style=\"{{buildBlockStyle(event)}}\">\n" +
@@ -145,41 +145,37 @@ angular.module("../newEvent/newEventView.html", []).run(["$templateCache", funct
     "					<h4 class=\"modal-title\">{{event.title}}</h4>\n" +
     "				</div>\n" +
     "				<div class=\"modal-body\">\n" +
-    "\n" +
     "					<div class=\"panel panel-default\">\n" +
-    "\n" +
     "						<div class=\"panel-body\">\n" +
-    "\n" +
-    "\n" +
-    "							<p>\n" +
     "							<h5>מתחיל</h5>\n" +
-    "							<input class=\"form-control mid\" required type=\"text\" name=\"date\" ng-model=\"date\" id=\"datepicker\"/>\n" +
-    "							<p ng-show=\"createNewEvent.date.$invalid\"\n" +
-    "							   class=\"help-block\">Please eneter the Date</p>\n" +
     "\n" +
-    "							<select class=\"form-control mid\" ng-model=\"event.startTime\">\n" +
-    "								<option ng-repeat=\"h in hoursWithHalfs\" value=\"{{h}}\">{{h}}</option>\n" +
-    "							</select>\n" +
-    "							</p>\n" +
-    "							<p>\n" +
-    "							<h5>כמות</h5>\n" +
-    "							<input type=\"text\" ng-model=\"event.occurrences\" class=\"form-control small\" value=\"1\"\n" +
-    "							       required=\"true\"/>\n" +
-    "							</p>\n" +
-    "							<p>\n" +
-    "							<h5>כמה זמן?</h5>\n" +
-    "							<input class=\"form-control small\" step=\"15\" type=\"number\"\n" +
-    "							       ng-model=\"event.duration.m\">&nbsp;<span>שעות</span>\n" +
-    "							<input class=\"form-control small\" type=\"number\"\n" +
-    "							       ng-model=\"event.duration.h\">&nbsp;<span>דקות</span>\n" +
-    "							</p>\n" +
-    "							<p>\n" +
-    "								<textarea class=\"form-control\" ng-model=\"event.title\"></textarea>\n" +
-    "							</p>\n" +
+    "							<div class=\"form-group\" ng-class=\"{'has-error': createNewEvent.date.$invalid || createNewEvent.startTime.$invalid}\">\n" +
+    "								<input class=\"form-control mid\" required type=\"text\" name=\"date\" ng-model=\"date\"\n" +
+    "								       id=\"datepicker\"/>\n" +
+    "								<select class=\"form-control mid\" required ng-model=\"event.startTime\" name=\"startTime\">\n" +
+    "									<option ng-repeat=\"h in hoursWithHalfs\" value=\"{{h}}\">{{h}}</option>\n" +
+    "								</select>\n" +
+    "							</div>\n" +
     "\n" +
-    "							<p>\n" +
+    "							<div class=\"form-group\" ng-class=\"{'has-error': createNewEvent.occurrences.$invalid}\">\n" +
+    "								<h5>כמות</h5>\n" +
+    "								<input type=\"text\" ng-model=\"event.occurrences\" name=\"occurrences\" class=\"form-control small\" value=\"1\"\n" +
+    "								       required=\"true\"/>\n" +
+    "							</div>\n" +
+    "							<div class=\"form-group\" ng-class=\"{'has-error': createNewEvent.minutes.$invalid || createNewEvent.hours.$invalid}\">\n" +
+    "								<h5>כמה זמן?</h5>\n" +
+    "								<input class=\"form-control small\" required step=\"15\" type=\"number\"\n" +
+    "								       ng-model=\"event.duration.m\" name=\"minutes\">&nbsp;<span>:</span>&nbsp;\n" +
+    "								<input class=\"form-control small\" required type=\"number\" name=\"hours\"\n" +
+    "								       ng-model=\"event.duration.h\">\n" +
+    "							</div>\n" +
+    "							<div class=\"form-group\"  ng-class=\"{'has-error': createNewEvent.title.$invalid}\">\n" +
+    "								<textarea required class=\"form-control\" ng-model=\"event.title\" name=\"title\"></textarea>\n" +
+    "							</div>\n" +
+    "\n" +
+    "							<div class=\"form-group\">\n" +
     "								<textarea class=\"form-control\" rows=\"4\" ng-model=\"event.about\"></textarea>\n" +
-    "							</p>\n" +
+    "							</div>\n" +
     "\n" +
     "						</div>\n" +
     "					</div>\n" +

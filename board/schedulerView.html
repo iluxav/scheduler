@@ -50,7 +50,7 @@
         <tbody>
         <tr ng-repeat="day in data.days track by $index"
             ng-class="{'today': dayOfWeek ==day.day && currentWeek==data.week}">
-            <td style="{{cellWidth}}">{{dayNames[day.day-1]}}</td>
+            <td style="{{cellWidth}}">{{dayNames[day.day]}}</td>
             <td style="{{cellWidth}}">
                 <div class="blockHolder" ng-repeat="event in day.events track by $index"
                      style="{{buildBlockStyle(event)}}">
