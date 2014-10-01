@@ -4,10 +4,7 @@
     <list default="true" id="779b0742-2e08-44d4-8654-fd31a2ca2f4b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newEvent/newEventView.html" afterPath="$PROJECT_DIR$/newEvent/newEventView.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scheduler.all.js" afterPath="$PROJECT_DIR$/dist/scheduler.all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scheduler.all.min.css" afterPath="$PROJECT_DIR$/dist/scheduler.all.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/scheduler.all.min.js" afterPath="$PROJECT_DIR$/dist/scheduler.all.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/scheduler.css" afterPath="$PROJECT_DIR$/css/scheduler.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/board/schedulerView.html" afterPath="$PROJECT_DIR$/board/schedulerView.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/templates.js" afterPath="$PROJECT_DIR$/dist/templates.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -32,20 +29,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="newEventView.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="newEventView.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/newEvent/newEventView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.666666" vertical-offset="0" max-vertical-offset="1188">
-              <caret line="28" column="103" selection-start-line="28" selection-start-column="103" selection-end-line="28" selection-end-column="103" />
+            <state vertical-scroll-proportion="0.76813656" vertical-offset="0" max-vertical-offset="1406">
+              <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scheduler.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="scheduler.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/scheduler.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3326226" vertical-offset="0" max-vertical-offset="3366">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3366">
               <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
               <folding>
                 <element signature="e#466#587#1" expanded="true" />
@@ -129,8 +126,8 @@
         <option value="$PROJECT_DIR$/newEvent/newEventDir.js" />
         <option value="$PROJECT_DIR$/board/schedulerDir.js" />
         <option value="$PROJECT_DIR$/board/schedulerView.html" />
-        <option value="$PROJECT_DIR$/newEvent/newEventView.html" />
         <option value="$PROJECT_DIR$/css/scheduler.css" />
+        <option value="$PROJECT_DIR$/newEvent/newEventView.html" />
       </list>
     </option>
   </component>
@@ -302,7 +299,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bontime" />
     <property name="FullScreen" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="218" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
@@ -472,7 +469,11 @@
       <created>1412167575949</created>
       <updated>1412167575949</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="adding maxAttendees field">
+      <created>1412167976588</created>
+      <updated>1412167976588</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -480,7 +481,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18035516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18035516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -490,7 +491,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34622824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34622824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -529,7 +530,8 @@
     <MESSAGE value="adding dist to git" />
     <MESSAGE value="creating new event validation" />
     <MESSAGE value="form validation for new event" />
-    <option name="LAST_COMMIT_MESSAGE" value="form validation for new event" />
+    <MESSAGE value="adding maxAttendees field" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding maxAttendees field" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -902,21 +904,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newEvent/newEventView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.666666" vertical-offset="0" max-vertical-offset="1188">
-          <caret line="28" column="103" selection-start-line="28" selection-start-column="103" selection-end-line="28" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/scheduler.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3326226" vertical-offset="0" max-vertical-offset="3366">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3366">
           <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
           <folding>
             <element signature="e#466#587#1" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newEvent/newEventView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76813656" vertical-offset="0" max-vertical-offset="1406">
+          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

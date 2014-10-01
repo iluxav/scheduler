@@ -138,7 +138,7 @@ angular.module("../newEvent/newEventView.html", []).run(["$templateCache", funct
     "<div ng-show=\"showNewDialog\" class=\"modal scheduler-wrapper-popup\">\n" +
     "	<div class=\"modal-dialog\">\n" +
     "		<div class=\"modal-content\">\n" +
-    "			<form name=\"createNewEvent\" ng-submit=\"create(createNewEvent.$valid)\" novalidate>\n" +
+    "			<form name=\"createNewEventForm\" ng-submit=\"create(createNewEventForm.$valid)\" novalidate>\n" +
     "				<div class=\"modal-header\">\n" +
     "					<button type=\"button\" ng-click=\"close()\" class=\"close\"><span aria-hidden=\"true\">&times;</span><span\n" +
     "							class=\"sr-only\">Close</span></button>\n" +
@@ -149,7 +149,7 @@ angular.module("../newEvent/newEventView.html", []).run(["$templateCache", funct
     "						<div class=\"panel-body\">\n" +
     "							<h5>מתחיל</h5>\n" +
     "\n" +
-    "							<div class=\"form-group\" ng-class=\"{'has-error': createNewEvent.date.$invalid || createNewEvent.startTime.$invalid}\">\n" +
+    "							<div class=\"form-group\" ng-class=\"{'has-error': createNewEventForm.date.$invalid || createNewEventForm.startTime.$invalid}\">\n" +
     "								<input class=\"form-control mid\" required type=\"text\" name=\"date\" ng-model=\"date\"\n" +
     "								       id=\"datepicker\"/>\n" +
     "								<select class=\"form-control mid\" required ng-model=\"event.startTime\" name=\"startTime\">\n" +
@@ -157,24 +157,24 @@ angular.module("../newEvent/newEventView.html", []).run(["$templateCache", funct
     "								</select>\n" +
     "							</div>\n" +
     "\n" +
-    "							<div class=\"form-group\" ng-class=\"{'has-error': createNewEvent.occurrences.$invalid}\">\n" +
+    "							<div class=\"form-group\" ng-class=\"{'has-error': createNewEventForm.occurrences.$invalid}\">\n" +
     "								<h5>כמות</h5>\n" +
     "								<input type=\"text\" ng-model=\"event.occurrences\" name=\"occurrences\" class=\"form-control small\" value=\"1\"\n" +
     "								       required=\"true\"/>\n" +
     "							</div>\n" +
-    "							<div class=\"form-group\" ng-class=\"{'has-error': createNewEvent.maxAttendees.$invalid}\">\n" +
+    "							<div class=\"form-group\" ng-class=\"{'has-error': createNewEventForm.maxAttendees.$invalid}\">\n" +
     "								<h5>משתתפים כמות</h5>\n" +
     "								<input type=\"text\" ng-model=\"event.maxAttendees\" name=\"maxAttendees\" class=\"form-control small\" value=\"1\"\n" +
     "								       required=\"true\"/>\n" +
     "							</div>\n" +
-    "							<div class=\"form-group\" ng-class=\"{'has-error': createNewEvent.minutes.$invalid || createNewEvent.hours.$invalid}\">\n" +
+    "							<div class=\"form-group\" ng-class=\"{'has-error': createNewEventForm.minutes.$invalid || createNewEventForm.hours.$invalid}\">\n" +
     "								<h5>כמה זמן?</h5>\n" +
     "								<input class=\"form-control small\" required step=\"15\" type=\"number\"\n" +
     "								       ng-model=\"event.duration.m\" name=\"minutes\">&nbsp;<span>:</span>&nbsp;\n" +
     "								<input class=\"form-control small\" required type=\"number\" name=\"hours\"\n" +
     "								       ng-model=\"event.duration.h\">\n" +
     "							</div>\n" +
-    "							<div class=\"form-group\"  ng-class=\"{'has-error': createNewEvent.title.$invalid}\">\n" +
+    "							<div class=\"form-group\"  ng-class=\"{'has-error': createNewEventForm.title.$invalid}\">\n" +
     "								<textarea required class=\"form-control\" ng-model=\"event.title\" name=\"title\"></textarea>\n" +
     "							</div>\n" +
     "\n" +
